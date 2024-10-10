@@ -1,88 +1,108 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "grosjeanbaptiste"
+  },
   "basics": {
     "name": "Baptiste Grosjean",
     "label": "Computer Scientist | Student @UMons by night & IT @EMVI by day",
     "image": "assets/images/profil.jpeg",
-    "email": "grosjeanbaptiste@outlook.com",
+    "email": "grosjeanbaptisteit@outlook.com",
     "phone": "+32 496 28 97 05",
     "url": "https://my-way-bg.vercel.app/about/way",
-    "website": "https://my-way-bg.vercel.app/about/way",
     "summary": "Computer Scientist | Student @UMons by night & IT @EMVI by day",
     "location": {
-      "countryCode": "BE",
+      "address": "Avenue Baron Albert D'Huart",
+      "postalCode": "1950",
       "city": "Kraainem",
-      "address": "Kraainem"
+      "countryCode": "BE",
+      "region": "Belgium"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "grosjeanbaptiste",
-        "url": "https://www.linkedin.com/in/grosjeanbaptiste/"
+        "url": "https://www.linkedin.com/in/grosjeanbaptiste"
       },
       {
         "network": "GitHub",
         "username": "grosjeanbaptiste",
         "url": "https://github.com/grosjeanbaptiste"
+      },
+      {
+        "network": "Npm",
+        "username": "grosjeanbaptiste",
+        "url": "https://npm.com/grosjeanbaptiste"
       }
     ]
   },
   "work": [
     {
+      "company": "EMVI",
+      "location": "Brugge, Flanders, Belgium",
+      "position": "IT",
+      "url": "https://www.emvi.ai",
+      "startDate": "2024-10-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
       "company": "Xtrada",
-      "location": "Anvers, Région flamande, Belgique",
+      "location": "Antwerp, Flanders, Belgium",
       "position": "Data Scientist",
-      "url": "https://www.linkedin.com/company/xtra-da/",
-      "startDate": "2024-03-31",
-      "endDate": "2024-09-30",
+      "url": "https://www.xtrada.be",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-22",
       "summary": "Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net\n\nModel rate 87%",
       "highlights": []
     },
     {
       "company": "Xtrada",
-      "location": "Anvers, Région flamande, Belgique",
+      "location": "Antwerp, Flanders, Belgium",
       "position": "Software Crafter",
-      "url": "https://www.linkedin.com/company/xtra-da/",
-      "startDate": "2023-08-31",
-      "endDate": "2024-09-30",
+      "url": "https://www.xtrada.be",
+      "startDate": "2023-08-21",
+      "endDate": "2024-09-22",
       "summary": "Software modernization within the .Net stack following domain driven design and clean code principles. \n\nImplementation of Azure ai services in .net solution.",
       "highlights": []
     },
     {
       "company": "VhAuctions",
       "location": "Anvers, Région flamande, Belgique",
-      "position": "Software Crafter",
-      "url": "",
-      "startDate": "2024-01-31",
-      "endDate": "2024-08-31",
+      "position": ".Net/React Software Crafter",
+      "url": "https://www.vhauctions.be",
+      "startDate": "2024-01-01",
+      "endDate": "2024-08-07",
       "highlights": []
     },
     {
       "company": "Hackathon Citizens of Wallonia",
       "location": "Charleroi et périphérie",
-      "position": "Full Stack",
-      "url": "",
-      "startDate": "2024-03-31",
-      "endDate": "2024-03-31",
-      "summary": "Project:\n- EduCraft: solution allowing anyone to craft his own personnalized path to get new skills",
+      "position": "Software Crafter",
+      "url": "https://www.cow.be",
+      "startDate": "2024-03-15",
+      "endDate": "2024-03-17",
+      "summary": "EduCraft: solution allowing anyone to craft his own personnalized path to get new skills",
       "highlights": []
     },
     {
       "company": "aXinco",
       "location": "Anvers, Région flamande, Belgique",
-      "position": "Software Crafter",
-      "url": "https://www.linkedin.com/company/axinco/",
-      "startDate": "2023-09-30",
+      "position": ".Net/Blazor Software Crafter",
+      "url": "https://www.axinco.be",
+      "startDate": "2023-09-01",
       "endDate": "2023-12-31",
       "summary": "Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.",
       "highlights": []
     },
     {
       "company": "Technofutur TIC",
-      "location": "Charleroi, Région wallonne, Belgique",
-      "position": "Full Stack Developer Web",
-      "url": "https://www.linkedin.com/school/technofutur-tic/",
-      "startDate": "2022-12-31",
+      "location": "Charleroi, Wallonia, Belgique",
+      "position": "Full Stack Developer Web Intern",
+      "url": "https://www.technofutur-tic.be",
+      "startDate": "2022-12-01",
       "endDate": "2023-06-30",
       "summary": "This qualifying training aimed to strengthen the technical skills acquired during my bachelor's degree program at EPHEC. \nIn addition, during the extension, we received an introduction to BUSINESS Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...). \nThis comprehensive training covered various areas including SQL Server, Node.js, Express.js, React.js, and Angular.js, encompassing everything from database development to user interface and backend.",
       "highlights": []
@@ -90,19 +110,19 @@
     {
       "company": "Hackathon Citizens of Wallonia",
       "location": "Charleroi, Région wallonne, Belgique",
-      "position": "Full Stack",
-      "url": "",
-      "startDate": "2023-03-31",
+      "position": "Full Stack Developer Web Intern",
+      "url": "https://www.cow.be",
+      "startDate": "2023-03-29",
       "endDate": "2023-03-31",
-      "summary": "Projects : \n- OnlyTogether: solution allowing the vulnerable users always being accompagned",
+      "summary": "OnlyTogether: solution allowing the vulnerable users always being accompagned",
       "highlights": []
     },
     {
       "company": "EDITx: IT Challenges, IT Jobs, Education in IT for X",
       "location": "Région de Bruxelles-Capitale, Belgique",
-      "position": "Web Development Intern",
+      "position": "Full Stack Developer Web Intern",
       "url": "https://www.linkedin.com/company/editx/",
-      "startDate": "2022-04-30",
+      "startDate": "2022-04-01",
       "endDate": "2022-04-30",
       "summary": "",
       "highlights": []
@@ -110,9 +130,9 @@
     {
       "company": "Les Auberges de Jeunesse - Wallonie & Bruxelles",
       "location": "Région de Bruxelles-Capitale, Belgique",
-      "position": "Student Job - Warehouse Worker",
-      "url": "https://www.linkedin.com/company/laj/",
-      "startDate": "2022-03-31",
+      "position": "Student Job",
+      "url": "https://www.laj.be",
+      "startDate": "2022-03-30",
       "endDate": "2022-03-31",
       "summary": "",
       "highlights": []
@@ -120,9 +140,9 @@
     {
       "company": "RESTOMAX",
       "location": "Région de Bruxelles-Capitale, Belgique",
-      "position": "Full Stack .Net / Flutter Developer Intern",
-      "url": "https://www.linkedin.com/company/restomax/",
-      "startDate": "2021-11-30",
+      "position": "Full Stack Developer Web Intern",
+      "url": "https://www.restomax.be",
+      "startDate": "2021-11-01",
       "endDate": "2022-03-31",
       "summary": "",
       "highlights": []
@@ -131,8 +151,8 @@
       "company": "Quick Restaurant",
       "location": "Kraainem, Flemish Region, Belgium",
       "position": "Student Job",
-      "url": "https://www.linkedin.com/company/quick/",
-      "startDate": "2017-09-30",
+      "url": "https://www.quick.be",
+      "startDate": "2017-09-01",
       "endDate": "2017-09-30",
       "summary": "",
       "highlights": []
@@ -140,59 +160,96 @@
   ],
   "volunteer": [
     {
-      "organization": "UMONS",
+      "organization": "UMons",
       "position": "Student Representative",
-      "url": "https://www.linkedin.com/school/umons/",
+      "url": "https://www.umons.be",
       "startDate": "2023-11-30",
       "endDate": "",
-      "summary": null,
+      "summary": "",
       "highlights": []
     },
     {
-      "organization": "UMONS",
+      "organization": "UMons",
       "position": "Buddy Tandemons",
-      "url": "https://www.linkedin.com/school/umons/",
+      "url": "https://www.umons.be",
       "startDate": "2023-11-30",
       "endDate": "",
-      "summary": null,
+      "summary": "",
       "highlights": []
     },
     {
       "organization": "EPHEC École Supérieure de Promotion Sociale",
       "position": "Student Representative",
-      "url": "https://www.linkedin.com/company/ephec-promotion-sociale/",
+      "url": "https://www.ephec.be",
       "startDate": "2019-09-30",
-      "endDate": "2022-10-31",
-      "summary": null,
+      "endDate": "2022-10-15",
+      "summary": "",
       "highlights": []
     },
     {
       "organization": "EPHEC École Supérieure de Promotion Sociale",
       "position": "Tutor",
-      "url": "https://www.linkedin.com/company/ephec-promotion-sociale/",
+      "url": "https://www.ephec.be",
       "startDate": "2019-09-30",
-      "endDate": "2022-10-31",
-      "summary": null,
+      "endDate": "2022-10-15",
+      "summary": "",
       "highlights": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "EduCraft",
+      "startDate": "2024-03-29",
+      "endDate": "2024-03-31",
+      "summary": "Education Manager"
+    },
+    {
+      "name": "MyWay",
+      "startDate": "2023-02-01",
+      "summary": "Education manager for students."
+    },
+    {
+      "name": "VhAuctions NER Inventory Model",
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-07",
+      "summary": "Named Entity Recognition Machine Learning Model to extract Inventory Items from and audio transcription."
+    },
+    {
+      "name": "VhAuctions",
+      "startDate": "2024-01-01",
+      "endDate": "2024-02-28",
+      "summary": "Fleet manager for auctions."
+    },
+    {
+      "name": "Kwalitijd",
+      "startDate": "2023-09-01",
+      "endDate": "2023-12-31",
+      "summary": "Survey manager for sports clubs and federations."
+    },
+    {
+      "name": "WebMenu",
+      "startDate": "2021-11-01",
+      "endDate": "2022-03-31",
+      "summary": "QRCode based cash register for HoReCa establishments."
     }
   ],
   "education": [
     {
-      "institution": "UMONS",
+      "institution": "UMons",
       "area": "Computer Science",
       "studyType": "Master of Science - MS",
-      "startDate": "2022-10-31",
-      "endDate": "2026-06-30",
+      "startDate": "2022-10-15",
       "gpa": "",
       "courses": []
     },
     {
-      "institution": "Ecole Pratique Hautes Etudes Commerciales (EPHEC)",
+      "institution": "Ecole Pratique Hautes Etudes Commerciales (EPHEC-EPS)",
       "area": "Information Systems Management",
       "studyType": "Professional Bachelor's degree",
       "startDate": "2018-09-30",
-      "endDate": "2022-10-31",
+      "endDate": "2022-10-15",
       "gpa": "Satisfaction ",
+      "summary": "WebMenu",
       "courses": []
     },
     {
@@ -216,7 +273,7 @@
     {
       "institution": "Solvay Brussels School of Economics and Management",
       "area": "Business Engineering",
-      "studyType": "Bachelor of Science - BS",
+      "studyType": "Bachelor of Science - BSc",
       "startDate": "2015-09-30",
       "endDate": "2016-06-30",
       "gpa": "Contact me for more informations.",
@@ -225,7 +282,7 @@
     {
       "institution": "Université libre de Bruxelles",
       "area": "Business Engineering",
-      "studyType": "Bachelor of Science - BS",
+      "studyType": "Bachelor of Science - BSc",
       "startDate": "2015-09-30",
       "endDate": "2016-06-30",
       "gpa": "Contact me for more informations.",
@@ -251,7 +308,7 @@
     },
     {
       "institution": "Lycée Mater Dei",
-      "area": "",
+      "area": "General studies Latin & Greec",
       "studyType": "",
       "startDate": "2009-09-30",
       "endDate": "2012-06-30",
@@ -259,32 +316,114 @@
       "courses": []
     }
   ],
-  "awards": [],
-  "certificates": [
+  "awards": [
     {
-      "name": "Test of English for International Communication (TOEIC)",
-      "issuer": "ETS",
-      "endDate": "2025-06-30",
-      "startDate": "2023-06-30"
+      "title": "TOEIC",
+      "date": "2023-06-06",
+      "awarder": "ETS",
+      "summary": "730"
     }
   ],
-  "publications": [],
-  "skills": [],
+  "skills": [
+    {
+      "name": "HardSkills",
+      "keywords": [
+        "SQL",
+        "C#",
+        "Java",
+        "Python",
+        "JS",
+        "TS",
+        "XML",
+        "JSON",
+        "HTML",
+        "CSS",
+        "Zsh",
+        "Dart",
+        "LaTeX",
+        "SQL Server",
+        "EF",
+        ".NET",
+        "Pandas",
+        "NumPy",
+        "Whisper",
+        "Spacy",
+        "Node.js",
+        "Express.js",
+        "Blazor",
+        "Angular.js",
+        "React.js",
+        "Flutter",
+        "Gradle",
+        "NPM",
+        "JWT",
+        "Auth0",
+        "SSH",
+        "Venv",
+        "Conda",
+        "Docker",
+        "UML",
+        "Merise",
+        "VisualParadigm",
+        "CleanCode",
+        "CleanArchitecture",
+        "DDD",
+        "CQRS"
+      ]
+    },
+    {
+      "name": "Learning",
+      "keywords": [
+        "TDD",
+        "TensorFlow",
+        "Scikit-Learn",
+        "C",
+        "XQuery",
+        "Blockchain"
+      ]
+    },
+    {
+      "name": "SoftSkills",
+      "keywords": [
+        "Adaptability",
+        "Resilience",
+        "Leadership",
+        "Creativity",
+        "Initiative",
+        "Analysis",
+        "Flexibility",
+        "Teamwork",
+        "Organization",
+        "Pragmatism",
+        "Resourcefulness",
+        "Thoroughness"
+      ]
+    }
+  ],
   "languages": [
-    {
-      "language": "Dutch",
-      "fluency": "Professional Working"
-    },
-    {
-      "language": "English",
-      "fluency": "Full Professional"
-    },
     {
       "language": "French",
       "fluency": "Native Speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B1+/B2 (TOEIC 730/ ELAO)"
+    },
+    {
+      "language": "Dutch",
+      "fluency": "B1"
     }
   ],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research and Development",
+      "keywords": [
+        "Innovations",
+        "Experimentation",
+        "POCs"
+      ]
+    }
+  ],
   "references": [
     {
       "name": "Tino Schuerewegen, Software developer at Xtrada",
@@ -306,48 +445,5 @@
       "name": "Michael Culot, Sales manager at Xtrada",
       "reference": "Baptiste is a great and devoted developer who’s eager to keep learning new technologies and elevate his skill set. You would be amazed about not only his knowledge but also his warm open enthusiasm. Baptiste, you’re going to be doing great things in your life, just keep your vibrate spirit ✊"
     }
-  ],
-  "projects": [
-    {
-      "name": "EduCraft",
-      "startDate": "2024-03-31",
-      "summary": "Education Manager",
-      "endDate": "2024-03-31"
-    },
-    {
-      "name": "MyWay",
-      "startDate": "2023-02-28",
-      "summary": "Education manager for students.",
-      "endDate": "2023-02-28"
-    },
-    {
-      "name": "VhAuctions Inventory Model",
-      "startDate": "2024-03-31",
-      "summary": "Named Entity Recognition Machine Learning Model to extract Inventory Items from and audio transcription.",
-      "endDate": "2024-08-31"
-    },
-    {
-      "name": "VhAuctions",
-      "startDate": "2024-01-31",
-      "summary": "Fleet manager for auctions.",
-      "endDate": "2024-02-28"
-    },
-    {
-      "name": "Kwalitijd",
-      "startDate": "2023-09-30",
-      "summary": "Survey manager for sports clubs and federations.",
-      "endDate": "2023-12-31"
-    },
-    {
-      "name": "WebMenu",
-      "startDate": "2021-11-30",
-      "summary": "QRCode based cash register for HoReCa establishments.",
-      "endDate": "2022-03-31"
-    }
-  ],
-  "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
-    "theme": "professional"
-  }
+  ]
 }
