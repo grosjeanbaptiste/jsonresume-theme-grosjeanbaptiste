@@ -3,16 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Baptiste Grosjean - CV</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #444;
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --primary-color: #001F5A; /* Bleu foncé */
+  --secondary-color: #FF0000; /* Rouge */
+  --third-color: #F3890B;     /* Orange foncé */
+  --body-color: #666666;      /* Gris foncé */
+  --emphasis-color: #2E2E2E;  /* Gris très foncé */
+  --background-color: #E2E2E2;/* Gris clair */
 }
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #444;
+  color: var(--body-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-top: 0;
 }
 
 .container {
@@ -23,18 +46,89 @@ body {
 .sidebar {
   background-color: var(--primary-color);
   color: #fff;
-  width: 35%;
-  padding: 30px;
+  width: 30%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-.sidebar a {
+.sidebar h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  color: var(--third-color);
+}
+
+.sidebar p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.sidebar i {
+  margin-right: 8px;
+}
+
+#profile-picture {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Compétences */
+.skills h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tags span {
+  background-color: var(--third-color);
   color: #fff;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Langues */
+.languages h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.languages p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.daily-life h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.daily-life canvas {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-content {
-  width: 65%;
-  padding: 30px;
+  width: 70%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -48,22 +142,61 @@ body {
   margin-bottom: 20px;
 }
 
-h1, h2, h3 {
-  color: #333;
-}
-
-#profile-picture {
-  width: 100%;
-  border-radius: 50%;
+.experience-item, .education-item, .project-item, .reference-item {
   margin-bottom: 20px;
 }
 
-.contact-info h2 {
-  margin-top: 0;
+.experience-item h3, .education-item h3, .project-item h3 {
+  margin: 0;
+}
+
+.date, .location {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.reference-item blockquote {
+  margin: 10px 0;
+  padding-left: 15px;
+  border-left: 3px solid var(--third-color);
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}
+
+.contact-info {
+  margin-bottom: 20px;
 }
 
 .contact-info p {
-  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.main-content h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--third-color);
+  margin-top: 5px;
+}
+
+.skills {
+  margin-bottom: 20px;
 }
 
 .skills .skill {
@@ -74,149 +207,196 @@ h1, h2, h3 {
   background-color: #ddd;
   border-radius: 5px;
   overflow: hidden;
-}
-
-.skill-level {
-  background-color: var(--primary-color);
   height: 10px;
 }
 
-.work-item, .education-item, .project-item {
-  margin-bottom: 20px;
+.skill-level {
+  background-color: var(--third-color);
+  height: 100%;
+  width: 0;
 }
 
-.date {
-  font-size: 0.9em;
-  color: #888;
+.skill-level[data-level]:after {
+  content: '';
+  display: block;
+  width: attr(data-level '%');
+  height: 100%;
+  background-color: var(--third-color);
 }
 
-.location {
-  font-size: 0.9em;
-  color: #888;
-  margin-bottom: 10px;
+.section-icon {
+  margin-right: 10px;
+  color: var(--third-color);
 }
 
-.reference-item blockquote {
-  margin: 10px 0;
-  padding-left: 15px;
-  border-left: 3px solid var(--primary-color);
-  color: #555;
+.project-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  margin: 5px 0;
+}
+
+.experience-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.experience-item .date, .education-item .date {
   font-style: italic;
 }
+
+.education-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.education-item .institution {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: '•';
+  color: var(--third-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.daily-life {
+  text-align: center;
+}
+
+.daily-life canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 20px;
+}
   </style>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
   <div class="container">
     <aside class="sidebar">
-      <!-- Photo de profil -->
       <img src="assets/images/profil.jpeg" alt="Baptiste Grosjean" id="profile-picture">
 
-      <!-- Informations personnelles -->
       <div class="contact-info">
-        <h2>Baptiste Grosjean</h2>
-        <h3>Computer Scientist | Student @UMons by night &amp; IT @EMVI by day</h3>
-        <p><strong>Email :</strong> <a href="mailto:grosjeanbaptiste@outlook.com">grosjeanbaptiste@outlook.com</a></p>
-        <p><strong>Téléphone :</strong> +32 496 28 97 05</p>
-        <p><strong>Site Web :</strong> <a href="https://my-way-bg.vercel.app/about/way">https://my-way-bg.vercel.app/about/way</a></p>
-        <p><strong>Adresse :</strong> Kraainem, Kraainem</p>
+        <h1>Baptiste Grosjean</h1>
+        <h2>Computer Scientist | Student @UMons by night &amp; IT @EMVI by day</h2>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:grosjeanbaptiste@outlook.com">grosjeanbaptiste@outlook.com</a></p>
+        <p><i class="fas fa-phone"></i> +32 496 28 97 05</p>
+        <p><i class="fas fa-map-marker-alt"></i> Kraainem, BE</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/grosjeanbaptiste/">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/grosjeanbaptiste">GitHub</a></p>
+        <p><i class="fas fa-car"></i> Permis B</p>
       </div>
 
-      <!-- Compétences -->
       <div class="skills">
-        <h2>Compétences</h2>
+        <h2>Compétences Techniques</h2>
       </div>
 
-      <!-- Langues -->
+      <div class="skills">
+        <h2>Compétences Personnelles</h2>
+      </div>
+
       <div class="languages">
         <h2>Langues</h2>
           <p>Dutch - Professional Working</p>
           <p>English - Full Professional</p>
           <p>French - Native Speaker</p>
       </div>
+
+      <div class="daily-life">
+        <h2>Une journée type</h2>
+        <canvas id="dailyLifeChart" width="200" height="200"></canvas>
+      </div>
     </aside>
     <main class="main-content">
-      <!-- Expérience professionnelle -->
-      <section id="work">
+      <section id="about">
+        <h2>À propos</h2>
+        <p></p>
+      </section>
+
+      <section id="experience">
         <h2>Expériences Professionnelles</h2>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Data Scientist chez Xtrada</h3>
             <p class="date">2024-03-31 - 2024-09-30</p>
             <p class="location">Anvers, Région flamande, Belgique</p>
             <p>Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net
 
 Model rate 87%</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Software Crafter chez Xtrada</h3>
             <p class="date">2023-08-31 - 2024-09-30</p>
             <p class="location">Anvers, Région flamande, Belgique</p>
             <p>Software modernization within the .Net stack following domain driven design and clean code principles. 
 
 Implementation of Azure ai services in .net solution.</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Software Crafter chez VhAuctions</h3>
             <p class="date">2024-01-31 - 2024-08-31</p>
             <p class="location">Anvers, Région flamande, Belgique</p>
             <p></p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
             <p class="date">2024-03-31 - 2024-03-31</p>
             <p class="location">Charleroi et périphérie</p>
             <p>Project:
 - EduCraft: solution allowing anyone to craft his own personnalized path to get new skills</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Software Crafter chez aXinco</h3>
             <p class="date">2023-09-30 - 2023-12-31</p>
             <p class="location">Anvers, Région flamande, Belgique</p>
             <p>Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Full Stack Developer Web chez Technofutur TIC</h3>
             <p class="date">2022-12-31 - 2023-06-30</p>
             <p class="location">Charleroi, Région wallonne, Belgique</p>
             <p>This qualifying training aimed to strengthen the technical skills acquired during my bachelor&#x27;s degree program at EPHEC. 
 In addition, during the extension, we received an introduction to BUSINESS Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...). 
 This comprehensive training covered various areas including SQL Server, Node.js, Express.js, React.js, and Angular.js, encompassing everything from database development to user interface and backend.</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
             <p class="date">2023-03-31 - 2023-03-31</p>
             <p class="location">Charleroi, Région wallonne, Belgique</p>
             <p>Projects : 
 - OnlyTogether: solution allowing the vulnerable users always being accompagned</p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Web Development Intern chez EDITx: IT Challenges, IT Jobs, Education in IT for X</h3>
             <p class="date">2022-04-30 - 2022-04-30</p>
             <p class="location">Région de Bruxelles-Capitale, Belgique</p>
             <p></p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Student Job - Warehouse Worker chez Les Auberges de Jeunesse - Wallonie &amp; Bruxelles</h3>
             <p class="date">2022-03-31 - 2022-03-31</p>
             <p class="location">Région de Bruxelles-Capitale, Belgique</p>
             <p></p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Full Stack .Net / Flutter Developer Intern chez RESTOMAX</h3>
             <p class="date">2021-11-30 - 2022-03-31</p>
             <p class="location">Région de Bruxelles-Capitale, Belgique</p>
             <p></p>
-          </div>
-          <div class="work-item">
+          <div class="experience-item">
             <h3>Student Job chez Quick Restaurant</h3>
             <p class="date">2017-09-30 - 2017-09-30</p>
             <p class="location">Kraainem, Flemish Region, Belgium</p>
             <p></p>
-          </div>
       </section>
 
-      <!-- Éducation -->
       <section id="education">
         <h2>Éducation</h2>
           <div class="education-item">
@@ -275,7 +455,6 @@ This comprehensive training covered various areas including SQL Server, Node.js,
           </div>
       </section>
 
-      <!-- Projets -->
       <section id="projects">
         <h2>Projets</h2>
           <div class="project-item">
@@ -310,7 +489,6 @@ This comprehensive training covered various areas including SQL Server, Node.js,
           </div>
       </section>
 
-      <!-- Références -->
       <section id="references">
         <h2>Références</h2>
           <div class="reference-item">
@@ -343,6 +521,33 @@ In summary, if you&#x27;re looking for someone who brings enthusiasm, intelligen
     </main>
   </div>
 
+
+<script>
+  var ctx = document.getElementById('dailyLifeChart').getContext('2d');
+  var dailyLifeChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Sommeil', 'Transport', 'Travail', 'Cours', 'Sport', 'Maison'],
+      datasets: [{
+        data: [7, 2, 9, 3, 1, 6],
+        backgroundColor: [
+          '#F3890B',
+          '#FF0000',
+          '#001F5A',
+          '#C0C0C0',
+          '#008000',
+          '#FFFF00'
+        ],
+      }]
+    },
+    options: {
+      responsive: false,
+      legend: {
+        position: 'bottom',
+      }
+    }
+  });
+</script>
 
 </body>
 </html>

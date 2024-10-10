@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #444;
+  --primary-color: #001F5A; /* Bleu foncé */
+  --secondary-color: #FF0000; /* Rouge */
+  --third-color: #F3890B;     /* Orange foncé */
+  --body-color: #666666;      /* Gris foncé */
+  --emphasis-color: #2E2E2E;  /* Gris très foncé */
+  --background-color: #E2E2E2;/* Gris clair */
 }
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #444;
+  color: var(--body-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-top: 0;
 }
 
 .container {
@@ -17,18 +38,89 @@ body {
 .sidebar {
   background-color: var(--primary-color);
   color: #fff;
-  width: 35%;
-  padding: 30px;
+  width: 30%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
-.sidebar a {
+.sidebar h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  color: var(--third-color);
+}
+
+.sidebar p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.sidebar i {
+  margin-right: 8px;
+}
+
+#profile-picture {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Compétences */
+.skills h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-tags span {
+  background-color: var(--third-color);
   color: #fff;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Langues */
+.languages h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.languages p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.daily-life h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.daily-life canvas {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-content {
-  width: 65%;
-  padding: 30px;
+  width: 70%;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -42,22 +134,61 @@ body {
   margin-bottom: 20px;
 }
 
-h1, h2, h3 {
-  color: #333;
-}
-
-#profile-picture {
-  width: 100%;
-  border-radius: 50%;
+.experience-item, .education-item, .project-item, .reference-item {
   margin-bottom: 20px;
 }
 
-.contact-info h2 {
-  margin-top: 0;
+.experience-item h3, .education-item h3, .project-item h3 {
+  margin: 0;
+}
+
+.date, .location {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.reference-item blockquote {
+  margin: 10px 0;
+  padding-left: 15px;
+  border-left: 3px solid var(--third-color);
+  color: #555;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar, .main-content {
+    width: 100%;
+  }
+}
+
+.contact-info {
+  margin-bottom: 20px;
 }
 
 .contact-info p {
-  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.main-content h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--third-color);
+  margin-top: 5px;
+}
+
+.skills {
+  margin-bottom: 20px;
 }
 
 .skills .skill {
@@ -68,32 +199,80 @@ h1, h2, h3 {
   background-color: #ddd;
   border-radius: 5px;
   overflow: hidden;
-}
-
-.skill-level {
-  background-color: var(--primary-color);
   height: 10px;
 }
 
-.work-item, .education-item, .project-item {
-  margin-bottom: 20px;
+.skill-level {
+  background-color: var(--third-color);
+  height: 100%;
+  width: 0;
 }
 
-.date {
-  font-size: 0.9em;
-  color: #888;
+.skill-level[data-level]:after {
+  content: '';
+  display: block;
+  width: attr(data-level '%');
+  height: 100%;
+  background-color: var(--third-color);
 }
 
-.location {
-  font-size: 0.9em;
-  color: #888;
-  margin-bottom: 10px;
+.section-icon {
+  margin-right: 10px;
+  color: var(--third-color);
 }
 
-.reference-item blockquote {
-  margin: 10px 0;
-  padding-left: 15px;
-  border-left: 3px solid var(--primary-color);
-  color: #555;
+.project-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  margin: 5px 0;
+}
+
+.experience-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.experience-item .date, .education-item .date {
   font-style: italic;
+}
+
+.education-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.education-item .institution {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: '•';
+  color: var(--third-color);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.daily-life {
+  text-align: center;
+}
+
+.daily-life canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 20px;
 }
