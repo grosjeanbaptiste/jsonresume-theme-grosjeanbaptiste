@@ -6,38 +6,97 @@
   <style>
     {{{ css }}}
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="{{ resume.basics.image }}" alt="{{ resume.basics.name }}" id="profile-picture">
-    <h1>{{ resume.basics.name }}</h1>
-    <h2>{{ resume.basics.label }}</h2>
-    <p>Email: <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a></p>
-    <p>Téléphone: {{ resume.basics.phone }}</p>
-    <p>Site Web: <a href="{{ resume.basics.website }}">{{ resume.basics.website }}</a></p>
-  </header>
 
-  <section id="work">
-    <h2>Expériences Professionnelles</h2>
-    {{#each resume.work}}
-      <div class="work-item">
-        <h3>{{ position }} chez {{ company }}</h3>
-        <p>{{ startDate }} - {{ endDate }}</p>
-        <p>{{ summary }}</p>
-      </div>
-    {{/each}}
-  </section>
+  <div class="container">
+    <aside class="sidebar">
+      <!-- Photo de profil -->
+      <img src="{{ resume.basics.image }}" alt="{{ resume.basics.name }}" id="profile-picture">
 
-  <section id="education">
-    <h2>Éducation</h2>
-    {{#each resume.education}}
-      <div class="education-item">
-        <h3>{{ studyType }} en {{ area }} à {{ institution }}</h3>
-        <p>{{ startDate }} - {{ endDate }}</p>
-        <p>{{ gpa }}</p>
+      <!-- Informations personnelles -->
+      <div class="contact-info">
+        <h2>{{ resume.basics.name }}</h2>
+        <h3>{{ resume.basics.label }}</h3>
+        <p><strong>Email :</strong> <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a></p>
+        <p><strong>Téléphone :</strong> {{ resume.basics.phone }}</p>
+        <p><strong>Site Web :</strong> <a href="{{ resume.basics.website }}">{{ resume.basics.website }}</a></p>
+        <p><strong>Adresse :</strong> {{ resume.basics.location.address }}, {{ resume.basics.location.city }}</p>
       </div>
-    {{/each}}
-  </section>
+
+      <!-- Compétences -->
+      <div class="skills">
+        <h2>Compétences</h2>
+        {{#each resume.skills}}
+          <div class="skill">
+            <h3>{{ name }}</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: {{ level }}%;"></div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+
+      <!-- Langues -->
+      <div class="languages">
+        <h2>Langues</h2>
+        {{#each resume.languages}}
+          <p>{{ language }} - {{ fluency }}</p>
+        {{/each}}
+      </div>
+    </aside>
+    <main class="main-content">
+      <!-- Expérience professionnelle -->
+      <section id="work">
+        <h2>Expériences Professionnelles</h2>
+        {{#each resume.work}}
+          <div class="work-item">
+            <h3>{{ position }} chez {{ company }}</h3>
+            <p class="date">{{ startDate }} - {{ endDate }}</p>
+            <p class="location">{{ location }}</p>
+            <p>{{ summary }}</p>
+          </div>
+        {{/each}}
+      </section>
+
+      <!-- Éducation -->
+      <section id="education">
+        <h2>Éducation</h2>
+        {{#each resume.education}}
+          <div class="education-item">
+            <h3>{{ studyType }} en {{ area }}</h3>
+            <p class="institution">{{ institution }}</p>
+            <p class="date">{{ startDate }} - {{ endDate }}</p>
+            <p>{{ gpa }}</p>
+          </div>
+        {{/each}}
+      </section>
+
+      <!-- Projets -->
+      <section id="projects">
+        <h2>Projets</h2>
+        {{#each resume.projects}}
+          <div class="project-item">
+            <h3>{{ name }}</h3>
+            <p class="date">{{ startDate }} - {{ endDate }}</p>
+            <p>{{ summary }}</p>
+          </div>
+        {{/each}}
+      </section>
+
+      <!-- Références -->
+      <section id="references">
+        <h2>Références</h2>
+        {{#each resume.references}}
+          <div class="reference-item">
+            <p><strong>{{ name }}</strong></p>
+            <blockquote>{{ reference }}</blockquote>
+          </div>
+        {{/each}}
+      </section>
+    </main>
+  </div>
 
 
 </body>

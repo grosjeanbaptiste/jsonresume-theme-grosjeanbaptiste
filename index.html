@@ -4,168 +4,344 @@
   <meta charset="UTF-8">
   <title>Baptiste Grosjean - CV</title>
   <style>
-    body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+    :root {
+  --primary-color: #4CAF50;
+  --secondary-color: #444;
 }
 
-header {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 35%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.main-content {
+  width: 65%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.main-content section {
   margin-bottom: 40px;
 }
 
-h1 {
-  margin: 0;
+.main-content h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-h2 {
-  margin-top: 10px;
-  color: #666;
+h1, h2, h3 {
+  color: #333;
 }
 
 #profile-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  object-fit: cover; 
+  width: 100%;
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
-.work-item {
+.contact-info h2 {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.skills .skill {
+  margin-bottom: 15px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: var(--primary-color);
+  height: 10px;
+}
+
+.work-item, .education-item, .project-item {
   margin-bottom: 20px;
 }
 
-.work-item h3 {
-  margin: 0;
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.location {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.reference-item blockquote {
+  margin: 10px 0;
+  padding-left: 15px;
+  border-left: 3px solid var(--primary-color);
+  color: #555;
+  font-style: italic;
 }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="assets/images/profil.jpeg" alt="Baptiste Grosjean" id="profile-picture">
-    <h1>Baptiste Grosjean</h1>
-    <h2>Computer Scientist | Student @UMons by night &amp; IT @EMVI by day</h2>
-    <p>Email: <a href="mailto:grosjeanbaptiste@outlook.com">grosjeanbaptiste@outlook.com</a></p>
-    <p>Téléphone: +32 496 28 97 05</p>
-    <p>Site Web: <a href="https://my-way-bg.vercel.app/about/way">https://my-way-bg.vercel.app/about/way</a></p>
-  </header>
 
-  <section id="work">
-    <h2>Expériences Professionnelles</h2>
-      <div class="work-item">
-        <h3>Data Scientist chez Xtrada</h3>
-        <p>2024-03-31 - 2024-09-30</p>
-        <p>Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net
+  <div class="container">
+    <aside class="sidebar">
+      <!-- Photo de profil -->
+      <img src="assets/images/profil.jpeg" alt="Baptiste Grosjean" id="profile-picture">
+
+      <!-- Informations personnelles -->
+      <div class="contact-info">
+        <h2>Baptiste Grosjean</h2>
+        <h3>Computer Scientist | Student @UMons by night &amp; IT @EMVI by day</h3>
+        <p><strong>Email :</strong> <a href="mailto:grosjeanbaptiste@outlook.com">grosjeanbaptiste@outlook.com</a></p>
+        <p><strong>Téléphone :</strong> +32 496 28 97 05</p>
+        <p><strong>Site Web :</strong> <a href="https://my-way-bg.vercel.app/about/way">https://my-way-bg.vercel.app/about/way</a></p>
+        <p><strong>Adresse :</strong> Kraainem, Kraainem</p>
+      </div>
+
+      <!-- Compétences -->
+      <div class="skills">
+        <h2>Compétences</h2>
+      </div>
+
+      <!-- Langues -->
+      <div class="languages">
+        <h2>Langues</h2>
+          <p>Dutch - Professional Working</p>
+          <p>English - Full Professional</p>
+          <p>French - Native Speaker</p>
+      </div>
+    </aside>
+    <main class="main-content">
+      <!-- Expérience professionnelle -->
+      <section id="work">
+        <h2>Expériences Professionnelles</h2>
+          <div class="work-item">
+            <h3>Data Scientist chez Xtrada</h3>
+            <p class="date">2024-03-31 - 2024-09-30</p>
+            <p class="location">Anvers, Région flamande, Belgique</p>
+            <p>Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net
 
 Model rate 87%</p>
-      </div>
-      <div class="work-item">
-        <h3>Software Crafter chez Xtrada</h3>
-        <p>2023-08-31 - 2024-09-30</p>
-        <p>Software modernization within the .Net stack following domain driven design and clean code principles. 
+          </div>
+          <div class="work-item">
+            <h3>Software Crafter chez Xtrada</h3>
+            <p class="date">2023-08-31 - 2024-09-30</p>
+            <p class="location">Anvers, Région flamande, Belgique</p>
+            <p>Software modernization within the .Net stack following domain driven design and clean code principles. 
 
 Implementation of Azure ai services in .net solution.</p>
-      </div>
-      <div class="work-item">
-        <h3>Software Crafter chez VhAuctions</h3>
-        <p>2024-01-31 - 2024-08-31</p>
-        <p></p>
-      </div>
-      <div class="work-item">
-        <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
-        <p>2024-03-31 - 2024-03-31</p>
-        <p>Project:
+          </div>
+          <div class="work-item">
+            <h3>Software Crafter chez VhAuctions</h3>
+            <p class="date">2024-01-31 - 2024-08-31</p>
+            <p class="location">Anvers, Région flamande, Belgique</p>
+            <p></p>
+          </div>
+          <div class="work-item">
+            <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
+            <p class="date">2024-03-31 - 2024-03-31</p>
+            <p class="location">Charleroi et périphérie</p>
+            <p>Project:
 - EduCraft: solution allowing anyone to craft his own personnalized path to get new skills</p>
-      </div>
-      <div class="work-item">
-        <h3>Software Crafter chez aXinco</h3>
-        <p>2023-09-30 - 2023-12-31</p>
-        <p>Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.</p>
-      </div>
-      <div class="work-item">
-        <h3>Full Stack Developer Web chez Technofutur TIC</h3>
-        <p>2022-12-31 - 2023-06-30</p>
-        <p>This qualifying training aimed to strengthen the technical skills acquired during my bachelor&#x27;s degree program at EPHEC. 
+          </div>
+          <div class="work-item">
+            <h3>Software Crafter chez aXinco</h3>
+            <p class="date">2023-09-30 - 2023-12-31</p>
+            <p class="location">Anvers, Région flamande, Belgique</p>
+            <p>Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.</p>
+          </div>
+          <div class="work-item">
+            <h3>Full Stack Developer Web chez Technofutur TIC</h3>
+            <p class="date">2022-12-31 - 2023-06-30</p>
+            <p class="location">Charleroi, Région wallonne, Belgique</p>
+            <p>This qualifying training aimed to strengthen the technical skills acquired during my bachelor&#x27;s degree program at EPHEC. 
 In addition, during the extension, we received an introduction to BUSINESS Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...). 
 This comprehensive training covered various areas including SQL Server, Node.js, Express.js, React.js, and Angular.js, encompassing everything from database development to user interface and backend.</p>
-      </div>
-      <div class="work-item">
-        <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
-        <p>2023-03-31 - 2023-03-31</p>
-        <p>Projects : 
+          </div>
+          <div class="work-item">
+            <h3>Full Stack chez Hackathon Citizens of Wallonia</h3>
+            <p class="date">2023-03-31 - 2023-03-31</p>
+            <p class="location">Charleroi, Région wallonne, Belgique</p>
+            <p>Projects : 
 - OnlyTogether: solution allowing the vulnerable users always being accompagned</p>
-      </div>
-      <div class="work-item">
-        <h3>Web Development Intern chez EDITx: IT Challenges, IT Jobs, Education in IT for X</h3>
-        <p>2022-04-30 - 2022-04-30</p>
-        <p></p>
-      </div>
-      <div class="work-item">
-        <h3>Student Job - Warehouse Worker chez Les Auberges de Jeunesse - Wallonie &amp; Bruxelles</h3>
-        <p>2022-03-31 - 2022-03-31</p>
-        <p></p>
-      </div>
-      <div class="work-item">
-        <h3>Full Stack .Net / Flutter Developer Intern chez RESTOMAX</h3>
-        <p>2021-11-30 - 2022-03-31</p>
-        <p></p>
-      </div>
-      <div class="work-item">
-        <h3>Student Job chez Quick Restaurant</h3>
-        <p>2017-09-30 - 2017-09-30</p>
-        <p></p>
-      </div>
-  </section>
+          </div>
+          <div class="work-item">
+            <h3>Web Development Intern chez EDITx: IT Challenges, IT Jobs, Education in IT for X</h3>
+            <p class="date">2022-04-30 - 2022-04-30</p>
+            <p class="location">Région de Bruxelles-Capitale, Belgique</p>
+            <p></p>
+          </div>
+          <div class="work-item">
+            <h3>Student Job - Warehouse Worker chez Les Auberges de Jeunesse - Wallonie &amp; Bruxelles</h3>
+            <p class="date">2022-03-31 - 2022-03-31</p>
+            <p class="location">Région de Bruxelles-Capitale, Belgique</p>
+            <p></p>
+          </div>
+          <div class="work-item">
+            <h3>Full Stack .Net / Flutter Developer Intern chez RESTOMAX</h3>
+            <p class="date">2021-11-30 - 2022-03-31</p>
+            <p class="location">Région de Bruxelles-Capitale, Belgique</p>
+            <p></p>
+          </div>
+          <div class="work-item">
+            <h3>Student Job chez Quick Restaurant</h3>
+            <p class="date">2017-09-30 - 2017-09-30</p>
+            <p class="location">Kraainem, Flemish Region, Belgium</p>
+            <p></p>
+          </div>
+      </section>
 
-  <section id="education">
-    <h2>Éducation</h2>
-      <div class="education-item">
-        <h3>Master of Science - MS en Computer Science à UMONS</h3>
-        <p>2022-10-31 - 2026-06-30</p>
-        <p></p>
-      </div>
-      <div class="education-item">
-        <h3>Professional Bachelor&#x27;s degree en Information Systems Management à Ecole Pratique Hautes Etudes Commerciales (EPHEC)</h3>
-        <p>2018-09-30 - 2022-10-31</p>
-        <p>Satisfaction </p>
-      </div>
-      <div class="education-item">
-        <h3>Attestation en 7e Spéciale Mathématiques à Institut Saint-Louis Bruxelles</h3>
-        <p>2019-09-30 - 2020-06-30</p>
-        <p>Attestation</p>
-      </div>
-      <div class="education-item">
-        <h3>Bachelor of Arts - BA en Political sciences à Université Saint-Louis - Bruxelles</h3>
-        <p>2016-09-30 - 2019-06-30</p>
-        <p>29 credits earned in 2016-2017, contact me for more informations.</p>
-      </div>
-      <div class="education-item">
-        <h3>Bachelor of Science - BS en Business Engineering à Solvay Brussels School of Economics and Management</h3>
-        <p>2015-09-30 - 2016-06-30</p>
-        <p>Contact me for more informations.</p>
-      </div>
-      <div class="education-item">
-        <h3>Bachelor of Science - BS en Business Engineering à Université libre de Bruxelles</h3>
-        <p>2015-09-30 - 2016-06-30</p>
-        <p>Contact me for more informations.</p>
-      </div>
-      <div class="education-item">
-        <h3>Cours préparatoires en Médecine et dentisterie à UCLouvain - Université catholique de Louvain</h3>
-        <p>2014-09-30 - 2015-06-30</p>
-        <p>Attestation </p>
-      </div>
-      <div class="education-item">
-        <h3>C.E.S.S. en General Studies Maths &amp; Modern languages à Centre Scolaire Saint-Adrien - Val Duchesse</h3>
-        <p>2012-09-30 - 2015-06-30</p>
-        <p>Satis bene</p>
-      </div>
-      <div class="education-item">
-        <h3> en  à Lycée Mater Dei</h3>
-        <p>2009-09-30 - 2012-06-30</p>
-        <p></p>
-      </div>
-  </section>
+      <!-- Éducation -->
+      <section id="education">
+        <h2>Éducation</h2>
+          <div class="education-item">
+            <h3>Master of Science - MS en Computer Science</h3>
+            <p class="institution">UMONS</p>
+            <p class="date">2022-10-31 - 2026-06-30</p>
+            <p></p>
+          </div>
+          <div class="education-item">
+            <h3>Professional Bachelor&#x27;s degree en Information Systems Management</h3>
+            <p class="institution">Ecole Pratique Hautes Etudes Commerciales (EPHEC)</p>
+            <p class="date">2018-09-30 - 2022-10-31</p>
+            <p>Satisfaction </p>
+          </div>
+          <div class="education-item">
+            <h3>Attestation en 7e Spéciale Mathématiques</h3>
+            <p class="institution">Institut Saint-Louis Bruxelles</p>
+            <p class="date">2019-09-30 - 2020-06-30</p>
+            <p>Attestation</p>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Arts - BA en Political sciences</h3>
+            <p class="institution">Université Saint-Louis - Bruxelles</p>
+            <p class="date">2016-09-30 - 2019-06-30</p>
+            <p>29 credits earned in 2016-2017, contact me for more informations.</p>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Science - BS en Business Engineering</h3>
+            <p class="institution">Solvay Brussels School of Economics and Management</p>
+            <p class="date">2015-09-30 - 2016-06-30</p>
+            <p>Contact me for more informations.</p>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Science - BS en Business Engineering</h3>
+            <p class="institution">Université libre de Bruxelles</p>
+            <p class="date">2015-09-30 - 2016-06-30</p>
+            <p>Contact me for more informations.</p>
+          </div>
+          <div class="education-item">
+            <h3>Cours préparatoires en Médecine et dentisterie</h3>
+            <p class="institution">UCLouvain - Université catholique de Louvain</p>
+            <p class="date">2014-09-30 - 2015-06-30</p>
+            <p>Attestation </p>
+          </div>
+          <div class="education-item">
+            <h3>C.E.S.S. en General Studies Maths &amp; Modern languages</h3>
+            <p class="institution">Centre Scolaire Saint-Adrien - Val Duchesse</p>
+            <p class="date">2012-09-30 - 2015-06-30</p>
+            <p>Satis bene</p>
+          </div>
+          <div class="education-item">
+            <h3> en </h3>
+            <p class="institution">Lycée Mater Dei</p>
+            <p class="date">2009-09-30 - 2012-06-30</p>
+            <p></p>
+          </div>
+      </section>
+
+      <!-- Projets -->
+      <section id="projects">
+        <h2>Projets</h2>
+          <div class="project-item">
+            <h3>EduCraft</h3>
+            <p class="date">2024-03-31 - 2024-03-31</p>
+            <p>Education Manager</p>
+          </div>
+          <div class="project-item">
+            <h3>MyWay</h3>
+            <p class="date">2023-02-28 - 2023-02-28</p>
+            <p>Education manager for students.</p>
+          </div>
+          <div class="project-item">
+            <h3>VhAuctions Inventory Model</h3>
+            <p class="date">2024-03-31 - 2024-08-31</p>
+            <p>Named Entity Recognition Machine Learning Model to extract Inventory Items from and audio transcription.</p>
+          </div>
+          <div class="project-item">
+            <h3>VhAuctions</h3>
+            <p class="date">2024-01-31 - 2024-02-28</p>
+            <p>Fleet manager for auctions.</p>
+          </div>
+          <div class="project-item">
+            <h3>Kwalitijd</h3>
+            <p class="date">2023-09-30 - 2023-12-31</p>
+            <p>Survey manager for sports clubs and federations.</p>
+          </div>
+          <div class="project-item">
+            <h3>WebMenu</h3>
+            <p class="date">2021-11-30 - 2022-03-31</p>
+            <p>QRCode based cash register for HoReCa establishments.</p>
+          </div>
+      </section>
+
+      <!-- Références -->
+      <section id="references">
+        <h2>Références</h2>
+          <div class="reference-item">
+            <p><strong>Tino Schuerewegen, Software developer at Xtrada</strong></p>
+            <blockquote>I had the pleasure of working with Baptiste for a year, with the added joy of mentoring him on a project for three months. If there&#x27;s one thing that stands out about Baptiste, it&#x27;s his boundless energy. Whether it&#x27;s 9 AM or 9 PM, he&#x27;s always the most enthusiastic person in the room—sometimes even more enthusiastic than the coffee machine.
+
+Baptiste brings a contagious energy to any project he&#x27;s part of. He’s outgoing, smart, and has an eagerness to learn that is truly admirable. Whether he&#x27;s diving into a complex task or asking insightful questions, he&#x27;s always in search of knowledge. His enthusiasm for learning, especially when it comes to leveraging tools like ChatGPT, is both impressive and a little intimidating. Seriously, if ChatGPT had a best friend, it would be Baptiste!
+
+He’s also incredibly hands-on, never shying away from rolling up his sleeves and getting deep into the work. His approach isn&#x27;t just theoretical; he&#x27;s all about practical, tangible results.
+
+In summary, if you&#x27;re looking for someone who brings enthusiasm, intelligence, and a touch of humor to every task, Baptiste is your person. Working with him was not just productive, but genuinely enjoyable.</blockquote>
+          </div>
+          <div class="reference-item">
+            <p><strong>Emiel Van Gysegem, Marketing and operations at Xtra Groep</strong></p>
+            <blockquote>Hoewel we niet direct samenwerkten, had ik altijd een heel fijne connectie met Baptiste. In een mengelmoes van Engels, Nederlands en Frans deelden we vaak leuke gesprekken. Zijn enthousiasme en energie zijn echt aanstekelijk, en hij weet een prettige, informele sfeer te creëren in elke interactie. Baptiste is iemand die een positieve dynamiek met zich meebrengt.</blockquote>
+          </div>
+          <div class="reference-item">
+            <p><strong>Steven Claus, CFO at Xtra Groep</strong></p>
+            <blockquote>Baptiste is a full-stack software developer and is driven by an unwavering determination. This mindset permeates every aspect of his career. He has worked in various fields, allowing him to quickly adapt to any situation. These roles have honed both his technical and interpersonal skills, making him a versatile collaborator who significantly impacts every project he joins. Fueled by a constant desire to learn, he continually updates his knowledge through a master’s degree in computer science. This ongoing learning journey makes him a well-rounded IT professional in the field of computer science.</blockquote>
+          </div>
+          <div class="reference-item">
+            <p><strong>Tjörven Janssens, software developer at Xtrada</strong></p>
+            <blockquote>Baptiste is naast een software ontwikkelaar, graag bezig met data-analyse en is een expert in het gebruik van chat-gtp. Hij leert graag nieuwe dingen en doet dit ook snel. Hij is erg enthousiast in omgang en staat steeds klaar voor een vriendelijk woord of wat advies.</blockquote>
+          </div>
+          <div class="reference-item">
+            <p><strong>Michael Culot, Sales manager at Xtrada</strong></p>
+            <blockquote>Baptiste is a great and devoted developer who’s eager to keep learning new technologies and elevate his skill set. You would be amazed about not only his knowledge but also his warm open enthusiasm. Baptiste, you’re going to be doing great things in your life, just keep your vibrate spirit ✊</blockquote>
+          </div>
+      </section>
+    </main>
+  </div>
 
 
 </body>

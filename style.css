@@ -1,35 +1,99 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #444;
 }
 
-header {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 35%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.main-content {
+  width: 65%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.main-content section {
   margin-bottom: 40px;
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin-top: 10px;
-  color: #666;
-}
-
-.work-item {
+.main-content h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
   margin-bottom: 20px;
 }
 
-.work-item h3 {
-  margin: 0;
+h1, h2, h3 {
+  color: #333;
 }
 
 #profile-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  object-fit: cover; 
+  width: 100%;
+  border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.skills .skill {
+  margin-bottom: 15px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  background-color: var(--primary-color);
+  height: 10px;
+}
+
+.work-item, .education-item, .project-item {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.location {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.reference-item blockquote {
+  margin: 10px 0;
+  padding-left: 15px;
+  border-left: 3px solid var(--primary-color);
+  color: #555;
+  font-style: italic;
 }
