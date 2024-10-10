@@ -82,16 +82,21 @@ h1, h2, h3 {
   margin: 5px 0;
 }
 
+.skill-category {
+  margin-bottom: 20px;
+}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.skill-tags span {
+.skill-tag {
   background-color: var(--third-color);
   color: #fff;
   padding: 5px 10px;
-  margin: 3px;
+  margin: 5px;
   border-radius: 3px;
   font-size: 0.9em;
 }

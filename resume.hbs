@@ -28,19 +28,17 @@
       </div>
 
       <div class="skills">
-        <h2>Compétences Techniques</h2>
-        {{#each resume.skills}}
-            <div class="skill">
+        <h2>Compétences</h2>
+          {{#each resume.skills}}
+            <div class="skill-category">
               <h3>{{ name }}</h3>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: {{ level }}%;"></div>
+              <div class="skill-tags">
+                {{#each keywords}}
+                  <span class="skill-tag">{{ this }}</span>
+                {{/each}}
               </div>
             </div>
-        {{/each}}
-      </div>
-
-      <div class="skills">
-        <h2>Compétences Personnelles</h2>
+          {{/each}}
       </div>
 
       <div class="languages">
