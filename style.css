@@ -36,8 +36,8 @@ h1, h2, h3 {
 }
 
 .sidebar {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--body-color);
   width: 30%;
   padding: 20px;
   box-sizing: border-box;
@@ -68,7 +68,6 @@ h1, h2, h3 {
   margin-bottom: 20px;
 }
 
-/* Compétences */
 .skills h2 {
   font-size: 1.5em;
   margin-top: 30px;
@@ -97,7 +96,6 @@ h1, h2, h3 {
   font-size: 0.9em;
 }
 
-/* Langues */
 .languages h2 {
   font-size: 1.5em;
   margin-top: 30px;
