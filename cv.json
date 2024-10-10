@@ -205,8 +205,18 @@
     },
     {
       "name": "MyWay",
+      "description": "Education manager for students.",
+      "highlights": [
+        "UI/UX.",
+        "APIs integration."
+      ],
+      "keywords": ["JavaScript", "API", "UI/UX"],
       "startDate": "2023-02-01",
-      "summary": "Education manager for students."
+      "summary": "Education manager for students.",
+      "url": "https://my-way-bg.vercel.app",
+      "roles": ["Founder"],
+      "entity": "Freelance",
+      "type": "Web Application"
     },
     {
       "name": "VhAuctions NER Inventory Model",
@@ -327,6 +337,7 @@
   "skills": [
     {
       "name": "HardSkills",
+      "level": "Intermediate",
       "keywords": [
         "SQL",
         "C#",

@@ -120,6 +120,11 @@
             <h3>{{ name }}</h3>
             <p class="date">{{ startDate }} - {{ endDate }}</p>
             <p>{{ summary }}</p>
+            <p>{{ description }}</p>
+            <p>Type: {{ type }}</p>
+            <p>Rôle: {{#each roles}}{{ this }} {{/each}}</p>
+            <p>Mots-clés: {{#each keywords}}{{ this }} {{/each}}</p>
+            <a href="{{ url }}">Voir le projet</a>
           </div>
         {{/each}}
       </section>
