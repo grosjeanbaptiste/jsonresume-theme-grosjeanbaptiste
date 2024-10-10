@@ -28,17 +28,48 @@
       </div>
 
       <div class="skills">
-        <h2>Compétences</h2>
-          {{#each resume.skills}}
+        <h2>Compétences Techniques</h2>
+        {{#each resume.skills}}
+          {{#if (eq name "HardSkills")}}
             <div class="skill-category">
-              <h3>{{ name }}</h3>
               <div class="skill-tags">
                 {{#each keywords}}
                   <span class="skill-tag">{{ this }}</span>
                 {{/each}}
               </div>
             </div>
-          {{/each}}
+          {{/if}}
+        {{/each}}
+      </div>
+
+      <div class="skills">
+        <h2>En cours d'apprentissage</h2>
+        {{#each resume.skills}}
+          {{#if (eq name "Learning")}}
+            <div class="skill-category">
+              <div class="skill-tags">
+                {{#each keywords}}
+                  <span class="skill-tag">{{ this }}</span>
+                {{/each}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+
+      <div class="skills">
+        <h2>Compétences Personnelles</h2>
+        {{#each resume.skills}}
+          {{#if (eq name "SoftSkills")}}
+            <div class="skill-category">
+              <div class="skill-tags">
+                {{#each keywords}}
+                  <span class="skill-tag">{{ this }}</span>
+                {{/each}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
       </div>
 
       <div class="languages">
