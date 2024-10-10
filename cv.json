@@ -1,0 +1,353 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Baptiste Grosjean",
+    "label": "Computer Scientist | Student @UMons by night & IT @EMVI by day",
+    "image": "assets/images/profil.jpeg",
+    "email": "grosjeanbaptiste@outlook.com",
+    "phone": "+32 496 28 97 05",
+    "url": "https://my-way-bg.vercel.app/about/way",
+    "website": "https://my-way-bg.vercel.app/about/way",
+    "summary": "",
+    "location": {
+      "countryCode": "BE",
+      "city": "Kraainem",
+      "address": "Kraainem"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "grosjeanbaptiste",
+        "url": "https://www.linkedin.com/in/grosjeanbaptiste/"
+      },
+      {
+        "network": "GitHub",
+        "username": "grosjeanbaptiste",
+        "url": "https://github.com/grosjeanbaptiste"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Xtrada",
+      "location": "Anvers, Région flamande, Belgique",
+      "position": "Data Scientist",
+      "url": "https://www.linkedin.com/company/xtra-da/",
+      "startDate": "2024-03-31",
+      "endDate": "2024-09-30",
+      "summary": "Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net\n\nModel rate 87%",
+      "highlights": []
+    },
+    {
+      "company": "Xtrada",
+      "location": "Anvers, Région flamande, Belgique",
+      "position": "Software Crafter",
+      "url": "https://www.linkedin.com/company/xtra-da/",
+      "startDate": "2023-08-31",
+      "endDate": "2024-09-30",
+      "summary": "Software modernization within the .Net stack following domain driven design and clean code principles. \n\nImplementation of Azure ai services in .net solution.",
+      "highlights": []
+    },
+    {
+      "company": "VhAuctions",
+      "location": "Anvers, Région flamande, Belgique",
+      "position": "Software Crafter",
+      "url": "",
+      "startDate": "2024-01-31",
+      "endDate": "2024-08-31",
+      "highlights": []
+    },
+    {
+      "company": "Hackathon Citizens of Wallonia",
+      "location": "Charleroi et périphérie",
+      "position": "Full Stack",
+      "url": "",
+      "startDate": "2024-03-31",
+      "endDate": "2024-03-31",
+      "summary": "Project:\n- EduCraft: solution allowing anyone to craft his own personnalized path to get new skills",
+      "highlights": []
+    },
+    {
+      "company": "aXinco",
+      "location": "Anvers, Région flamande, Belgique",
+      "position": "Software Crafter",
+      "url": "https://www.linkedin.com/company/axinco/",
+      "startDate": "2023-09-30",
+      "endDate": "2023-12-31",
+      "summary": "Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.",
+      "highlights": []
+    },
+    {
+      "company": "Technofutur TIC",
+      "location": "Charleroi, Région wallonne, Belgique",
+      "position": "Full Stack Developer Web",
+      "url": "https://www.linkedin.com/school/technofutur-tic/",
+      "startDate": "2022-12-31",
+      "endDate": "2023-06-30",
+      "summary": "This qualifying training aimed to strengthen the technical skills acquired during my bachelor's degree program at EPHEC. \nIn addition, during the extension, we received an introduction to BUSINESS Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...). \nThis comprehensive training covered various areas including SQL Server, Node.js, Express.js, React.js, and Angular.js, encompassing everything from database development to user interface and backend.",
+      "highlights": []
+    },
+    {
+      "company": "Hackathon Citizens of Wallonia",
+      "location": "Charleroi, Région wallonne, Belgique",
+      "position": "Full Stack",
+      "url": "",
+      "startDate": "2023-03-31",
+      "endDate": "2023-03-31",
+      "summary": "Projects : \n- OnlyTogether: solution allowing the vulnerable users always being accompagned",
+      "highlights": []
+    },
+    {
+      "company": "EDITx: IT Challenges, IT Jobs, Education in IT for X",
+      "location": "Région de Bruxelles-Capitale, Belgique",
+      "position": "Web Development Intern",
+      "url": "https://www.linkedin.com/company/editx/",
+      "startDate": "2022-04-30",
+      "endDate": "2022-04-30",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Les Auberges de Jeunesse - Wallonie & Bruxelles",
+      "location": "Région de Bruxelles-Capitale, Belgique",
+      "position": "Student Job - Warehouse Worker",
+      "url": "https://www.linkedin.com/company/laj/",
+      "startDate": "2022-03-31",
+      "endDate": "2022-03-31",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "RESTOMAX",
+      "location": "Région de Bruxelles-Capitale, Belgique",
+      "position": "Full Stack .Net / Flutter Developer Intern",
+      "url": "https://www.linkedin.com/company/restomax/",
+      "startDate": "2021-11-30",
+      "endDate": "2022-03-31",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Quick Restaurant",
+      "location": "Kraainem, Flemish Region, Belgium",
+      "position": "Student Job",
+      "url": "https://www.linkedin.com/company/quick/",
+      "startDate": "2017-09-30",
+      "endDate": "2017-09-30",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "UMONS",
+      "position": "Student Representative",
+      "url": "https://www.linkedin.com/school/umons/",
+      "startDate": "2023-11-30",
+      "endDate": "",
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "UMONS",
+      "position": "Buddy Tandemons",
+      "url": "https://www.linkedin.com/school/umons/",
+      "startDate": "2023-11-30",
+      "endDate": "",
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "EPHEC École Supérieure de Promotion Sociale",
+      "position": "Student Representative",
+      "url": "https://www.linkedin.com/company/ephec-promotion-sociale/",
+      "startDate": "2019-09-30",
+      "endDate": "2022-10-31",
+      "summary": null,
+      "highlights": []
+    },
+    {
+      "organization": "EPHEC École Supérieure de Promotion Sociale",
+      "position": "Tutor",
+      "url": "https://www.linkedin.com/company/ephec-promotion-sociale/",
+      "startDate": "2019-09-30",
+      "endDate": "2022-10-31",
+      "summary": null,
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "UMONS",
+      "area": "Computer Science",
+      "studyType": "Master of Science - MS",
+      "startDate": "2022-10-31",
+      "endDate": "2026-06-30",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Ecole Pratique Hautes Etudes Commerciales (EPHEC)",
+      "area": "Information Systems Management",
+      "studyType": "Professional Bachelor's degree",
+      "startDate": "2018-09-30",
+      "endDate": "2022-10-31",
+      "gpa": "Satisfaction ",
+      "courses": []
+    },
+    {
+      "institution": "Institut Saint-Louis Bruxelles",
+      "area": "7e Spéciale Mathématiques",
+      "studyType": "Attestation",
+      "startDate": "2019-09-30",
+      "endDate": "2020-06-30",
+      "gpa": "Attestation",
+      "courses": []
+    },
+    {
+      "institution": "Université Saint-Louis - Bruxelles",
+      "area": "Political sciences",
+      "studyType": "Bachelor of Arts - BA",
+      "startDate": "2016-09-30",
+      "endDate": "2019-06-30",
+      "gpa": "29 credits earned in 2016-2017, contact me for more informations.",
+      "courses": []
+    },
+    {
+      "institution": "Solvay Brussels School of Economics and Management",
+      "area": "Business Engineering",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2015-09-30",
+      "endDate": "2016-06-30",
+      "gpa": "Contact me for more informations.",
+      "courses": []
+    },
+    {
+      "institution": "Université libre de Bruxelles",
+      "area": "Business Engineering",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2015-09-30",
+      "endDate": "2016-06-30",
+      "gpa": "Contact me for more informations.",
+      "courses": []
+    },
+    {
+      "institution": "UCLouvain - Université catholique de Louvain",
+      "area": "Médecine et dentisterie",
+      "studyType": "Cours préparatoires",
+      "startDate": "2014-09-30",
+      "endDate": "2015-06-30",
+      "gpa": "Attestation ",
+      "courses": []
+    },
+    {
+      "institution": "Centre Scolaire Saint-Adrien - Val Duchesse",
+      "area": "General Studies Maths & Modern languages",
+      "studyType": "C.E.S.S.",
+      "startDate": "2012-09-30",
+      "endDate": "2015-06-30",
+      "gpa": "Satis bene",
+      "courses": []
+    },
+    {
+      "institution": "Lycée Mater Dei",
+      "area": "",
+      "studyType": "",
+      "startDate": "2009-09-30",
+      "endDate": "2012-06-30",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Test of English for International Communication (TOEIC)",
+      "issuer": "ETS",
+      "endDate": "2025-06-30",
+      "startDate": "2023-06-30"
+    }
+  ],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Professional Working"
+    },
+    {
+      "language": "English",
+      "fluency": "Full Professional"
+    },
+    {
+      "language": "French",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Tino Schuerewegen, Software developer at Xtrada",
+      "reference": "I had the pleasure of working with Baptiste for a year, with the added joy of mentoring him on a project for three months. If there's one thing that stands out about Baptiste, it's his boundless energy. Whether it's 9 AM or 9 PM, he's always the most enthusiastic person in the room—sometimes even more enthusiastic than the coffee machine.\n\nBaptiste brings a contagious energy to any project he's part of. He’s outgoing, smart, and has an eagerness to learn that is truly admirable. Whether he's diving into a complex task or asking insightful questions, he's always in search of knowledge. His enthusiasm for learning, especially when it comes to leveraging tools like ChatGPT, is both impressive and a little intimidating. Seriously, if ChatGPT had a best friend, it would be Baptiste!\n\nHe’s also incredibly hands-on, never shying away from rolling up his sleeves and getting deep into the work. His approach isn't just theoretical; he's all about practical, tangible results.\n\nIn summary, if you're looking for someone who brings enthusiasm, intelligence, and a touch of humor to every task, Baptiste is your person. Working with him was not just productive, but genuinely enjoyable."
+    },
+    {
+      "name": "Emiel Van Gysegem, Marketing and operations at Xtra Groep",
+      "reference": "Hoewel we niet direct samenwerkten, had ik altijd een heel fijne connectie met Baptiste. In een mengelmoes van Engels, Nederlands en Frans deelden we vaak leuke gesprekken. Zijn enthousiasme en energie zijn echt aanstekelijk, en hij weet een prettige, informele sfeer te creëren in elke interactie. Baptiste is iemand die een positieve dynamiek met zich meebrengt."
+    },
+    {
+      "name": "Steven Claus, CFO at Xtra Groep",
+      "reference": "Baptiste is a full-stack software developer and is driven by an unwavering determination. This mindset permeates every aspect of his career. He has worked in various fields, allowing him to quickly adapt to any situation. These roles have honed both his technical and interpersonal skills, making him a versatile collaborator who significantly impacts every project he joins. Fueled by a constant desire to learn, he continually updates his knowledge through a master’s degree in computer science. This ongoing learning journey makes him a well-rounded IT professional in the field of computer science."
+    },
+    {
+      "name": "Tjörven Janssens, software developer at Xtrada",
+      "reference": "Baptiste is naast een software ontwikkelaar, graag bezig met data-analyse en is een expert in het gebruik van chat-gtp. Hij leert graag nieuwe dingen en doet dit ook snel. Hij is erg enthousiast in omgang en staat steeds klaar voor een vriendelijk woord of wat advies."
+    },
+    {
+      "name": "Michael Culot, Sales manager at Xtrada",
+      "reference": "Baptiste is a great and devoted developer who’s eager to keep learning new technologies and elevate his skill set. You would be amazed about not only his knowledge but also his warm open enthusiasm. Baptiste, you’re going to be doing great things in your life, just keep your vibrate spirit ✊"
+    }
+  ],
+  "projects": [
+    {
+      "name": "EduCraft",
+      "startDate": "2024-03-31",
+      "summary": "Education Manager",
+      "endDate": "2024-03-31"
+    },
+    {
+      "name": "MyWay",
+      "startDate": "2023-02-28",
+      "summary": "Education manager for students.",
+      "endDate": "2023-02-28"
+    },
+    {
+      "name": "VhAuctions Inventory Model",
+      "startDate": "2024-03-31",
+      "summary": "Named Entity Recognition Machine Learning Model to extract Inventory Items from and audio transcription.",
+      "endDate": "2024-08-31"
+    },
+    {
+      "name": "VhAuctions",
+      "startDate": "2024-01-31",
+      "summary": "Fleet manager for auctions.",
+      "endDate": "2024-02-28"
+    },
+    {
+      "name": "Kwalitijd",
+      "startDate": "2023-09-30",
+      "summary": "Survey manager for sports clubs and federations.",
+      "endDate": "2023-12-31"
+    },
+    {
+      "name": "WebMenu",
+      "startDate": "2021-11-30",
+      "summary": "QRCode based cash register for HoReCa establishments.",
+      "endDate": "2022-03-31"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "professional"
+  }
+}

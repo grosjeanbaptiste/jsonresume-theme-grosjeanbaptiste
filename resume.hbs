@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ resume.basics.name }} - CV</title>
+  <style>
+    {{{ css }}}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="{{ resume.basics.image }}" alt="{{ resume.basics.name }}" id="profile-picture">
+    <h1>{{ resume.basics.name }}</h1>
+    <h2>{{ resume.basics.label }}</h2>
+    <p>Email: <a href="mailto:{{ resume.basics.email }}">{{ resume.basics.email }}</a></p>
+    <p>Téléphone: {{ resume.basics.phone }}</p>
+    <p>Site Web: <a href="{{ resume.basics.website }}">{{ resume.basics.website }}</a></p>
+  </header>
+
+  <section id="work">
+    <h2>Expériences Professionnelles</h2>
+    {{#each resume.work}}
+      <div class="work-item">
+        <h3>{{ position }} chez {{ company }}</h3>
+        <p>{{ startDate }} - {{ endDate }}</p>
+        <p>{{ summary }}</p>
+      </div>
+    {{/each}}
+  </section>
+
+  <section id="education">
+    <h2>Éducation</h2>
+    {{#each resume.education}}
+      <div class="education-item">
+        <h3>{{ studyType }} en {{ area }} à {{ institution }}</h3>
+        <p>{{ startDate }} - {{ endDate }}</p>
+        <p>{{ gpa }}</p>
+      </div>
+    {{/each}}
+  </section>
+
+
+</body>
+</html>
