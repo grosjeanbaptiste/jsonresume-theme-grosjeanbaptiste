@@ -17,7 +17,7 @@
   "author": "Baptiste Grosjean <grosjeanbaptisteit@outlook.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grosjeanbaptiste/jsonresume-theme-grosjeanbaptiste.git"
+    "url": "git+https://github.com/grosjeanbaptiste/jsonresume-theme-grosjeanbaptiste.git"
   },
   "dependencies": {
     "handlebars": "^4.7.8"
