@@ -20,6 +20,7 @@
     "url": "git+https://github.com/grosjeanbaptiste/jsonresume-theme-grosjeanbaptiste.git"
   },
   "dependencies": {
-    "handlebars": "^4.7.8"
+    "handlebars": "^4.7.8",
+    "node-fetch": "^3.3.2"
   }
 }
