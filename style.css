@@ -36,6 +36,11 @@ h1, h2, h3 {
 }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+  overflow-y: auto; 
   background-color: var(--background-color);
   color: var(--body-color);
   width: 30%;
@@ -122,9 +127,12 @@ h1, h2, h3 {
 }
 
 .main-content {
+  margin-left: 30%;
   width: 70%;
   padding: 20px;
   box-sizing: border-box;
+  height: 100vh;
+  overflow-y: scroll; 
 }
 
 .main-content section {
@@ -139,6 +147,18 @@ h1, h2, h3 {
 
 .experience-item, .education-item, .project-item, .reference-item {
   margin-bottom: 20px;
+  max-height: 50px; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.experience-item:hover, .education-item:hover, .project-item:hover, .reference-item:hover {
+  max-height: 500px; 
+}
+
+.experience-item:hover, .education-item:hover, .project-item:hover, .reference-item:hover {
+  background-color: var(--background-color); 
 }
 
 .experience-item h3, .education-item h3, .project-item h3 {
