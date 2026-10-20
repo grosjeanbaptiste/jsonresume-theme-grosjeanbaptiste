@@ -1,0 +1,21 @@
+Copyright (c) 2026 Baptiste Grosjean. All rights reserved.
+
+This repository is proprietary. It is public so that it can be read; being able
+to read it grants no licence of any kind.
+
+No part of it — source code, scripts, stylesheets, templates, generated files,
+the CV and its data, texts, design and images — may be used, copied, modified,
+merged, published, distributed, sublicensed, sold, or used to train or evaluate
+machine-learning models, in whole or in part, without the prior written
+permission of the copyright holder.
+
+The only exception is what GitHub's Terms of Service let other GitHub users do
+with a public repository on GitHub itself (view it and fork it there); that
+grants no right to use any of it elsewhere.
+
+Third-party material keeps its own licence and is not covered by this notice:
+dependencies remain under the licences of their authors. Versions 1.0.0 and
+1.1.0 of this theme were published on npm under the ISC licence and keep it;
+every later version is covered by this notice.
+
+Contact: grosjeanbaptiste@outlook.com
