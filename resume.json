@@ -7,12 +7,12 @@
   },
   "basics": {
     "name": "Baptiste Grosjean",
-    "label": "Computer Scientist | Student @UMons by night & IT @EMVI by day",
+    "label": "Computer Scientist",
     "image": "assets/images/profil.jpeg",
-    "email": "grosjeanbaptisteit@outlook.com",
+    "email": "grosjeanbaptiste@outlook.com",
     "phone": "+32 496 28 97 05",
-    "url": "https://my-way-bg.vercel.app/about/way",
-    "summary": "Computer Scientist | Student @UMons by night & IT @EMVI by day",
+    "url": "https://www.grosjeanbaptiste.com",
+    "summary": "Computer scientist — MSc from UMons — building Acteble.\n\nWorking at the crossroads of AI-era software engineering — Claude Code workflows, autonomous agents, RAG pipelines, mobile development — anchored by Software Craftsmanship: clean code, clean architecture, hexagonal architecture, DDD, TDD.",
     "location": {
       "address": "Avenue Baron Albert D'Huart",
       "postalCode": "1950",
@@ -23,321 +23,889 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "grosjeanbaptiste",
-        "url": "https://www.linkedin.com/in/grosjeanbaptiste"
+        "url": "https://www.linkedin.com/in/grosjeanbaptiste",
+        "username": "grosjeanbaptiste"
       },
       {
         "network": "GitHub",
-        "username": "grosjeanbaptiste",
-        "url": "https://github.com/grosjeanbaptiste"
+        "url": "https://github.com/grosjeanbaptiste",
+        "username": "grosjeanbaptiste"
       },
       {
         "network": "Npm",
-        "username": "grosjeanbaptiste",
-        "url": "https://npm.com/grosjeanbaptiste"
+        "url": "https://npm.com/grosjeanbaptiste",
+        "username": "grosjeanbaptiste"
       }
     ]
   },
   "work": [
     {
-      "company": "EMVI",
-      "location": "Brugge, Flanders, Belgium",
-      "position": "IT",
+      "company": "Acteble",
+      "position": "Founder",
+      "url": "https://www.acteble.com",
+      "location": "Brussels, Belgium",
+      "startDate": "2025-07-01",
+      "summary": "Sole founder, architect and developer. Rust backend + Flutter mobile. The R&D layer also served as the dissertation for my MSc in Computer Science at UMons."
+    },
+    {
+      "company": "Belgian Senate",
+      "position": "AI Research Scientist",
+      "url": "https://www.senate.be",
+      "location": "Brussels, Belgium",
+      "startDate": "2025-11-03",
+      "endDate": "2026-06-30",
+      "summary": "AI research and engineering for the Belgian Federal Parliament. Designed an internal platform that lets staff search, explore and converse with the parliamentary archives. Authored an open evaluation protocol that compares retrieval strategies on the Senate corpus, with a focus on bilingual FR/NL robustness."
+    },
+    {
+      "company": "Emvi.ai",
+      "position": "AI Software Crafter Lead",
       "url": "https://www.emvi.ai",
+      "location": "Brugge, Belgium",
+      "startDate": "2024-12-01",
+      "endDate": "2025-06-30",
+      "summary": "Led the crafting from technical design through delivery: OCR pipeline, code scanning, and a Valhalla routing system adapted for the visually impaired.",
+      "highlights": [
+        "Dart / Flutter / Firebase / Firestore / OpenAI / Valhalla"
+      ]
+    },
+    {
+      "company": "Emvi.ai",
+      "position": "AI Software Crafter",
+      "url": "https://www.emvi.ai",
+      "location": "Brugge, Belgium",
       "startDate": "2024-10-01",
-      "summary": "",
-      "highlights": []
+      "endDate": "2025-06-30",
+      "summary": "Built the facial recognition pipeline (DeepFace / Serengil — detection + recognition) and the sentiment-analysis stack for the LLM-generated photo descriptions.",
+      "highlights": [
+        "Python / FastAPI / OpenAI / Whisper / DeepFace by Serengil"
+      ]
     },
     {
       "company": "Xtrada",
-      "location": "Antwerp, Flanders, Belgium",
       "position": "Data Scientist",
       "url": "https://www.xtrada.be",
+      "location": "Antwerp, Flanders, Belgium",
       "startDate": "2024-03-01",
       "endDate": "2024-09-22",
-      "summary": "Use of python libraries (Spacy,...) to extract named entities from text via NER model training and implementation in .Net\n\nModel rate 87%",
-      "highlights": []
+      "summary": "Used Python libraries (SpaCy, ...) to extract named entities from text via NER model training and implementation in .NET. Model recall score: 87%."
     },
     {
       "company": "Xtrada",
-      "location": "Antwerp, Flanders, Belgium",
       "position": "Software Crafter",
       "url": "https://www.xtrada.be",
+      "location": "Antwerp, Flanders, Belgium",
       "startDate": "2023-08-21",
       "endDate": "2024-09-22",
-      "summary": "Software modernization within the .Net stack following domain driven design and clean code principles. \n\nImplementation of Azure ai services in .net solution.",
-      "highlights": []
+      "summary": "Software modernization within the .NET stack following domain-driven design and clean code principles. Implementation of Azure AI services in a .NET solution."
     },
     {
-      "company": "VhAuctions",
-      "location": "Anvers, Région flamande, Belgique",
-      "position": ".Net/React Software Crafter",
+      "company": "Xtrada",
+      "position": ".NET/React Software Crafter",
       "url": "https://www.vhauctions.be",
-      "startDate": "2024-01-01",
-      "endDate": "2024-08-07",
-      "highlights": []
-    },
-    {
-      "company": "Hackathon Citizens of Wallonia",
-      "location": "Charleroi et périphérie",
-      "position": "Software Crafter",
-      "url": "https://www.cow.be",
-      "startDate": "2024-03-15",
-      "endDate": "2024-03-17",
-      "summary": "EduCraft: solution allowing anyone to craft his own personnalized path to get new skills",
-      "highlights": []
-    },
-    {
-      "company": "aXinco",
       "location": "Anvers, Région flamande, Belgique",
-      "position": ".Net/Blazor Software Crafter",
+      "startDate": "2024-01-01",
+      "endDate": "2024-08-07"
+    },
+    {
+      "company": "Xtrada",
+      "position": ".NET/Blazor Software Crafter",
       "url": "https://www.axinco.be",
+      "location": "Anvers, Région flamande, Belgique",
       "startDate": "2023-09-01",
       "endDate": "2023-12-31",
-      "summary": "Crafting Axinco Kwalitijd webapp in .Net / Blazor folowing DDD and clean code principles.",
-      "highlights": []
+      "summary": "Crafted the webapp in .NET / Blazor following DDD and clean code principles."
     },
     {
       "company": "Technofutur TIC",
-      "location": "Charleroi, Wallonia, Belgique",
       "position": "Full Stack Developer Web Intern",
       "url": "https://www.technofutur-tic.be",
+      "location": "Charleroi, Wallonia, Belgique",
       "startDate": "2022-12-01",
       "endDate": "2023-06-30",
-      "summary": "This qualifying training aimed to strengthen the technical skills acquired during my bachelor's degree program at EPHEC. \nIn addition, during the extension, we received an introduction to BUSINESS Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...). \nThis comprehensive training covered various areas including SQL Server, Node.js, Express.js, React.js, and Angular.js, encompassing everything from database development to user interface and backend.",
-      "highlights": []
-    },
-    {
-      "company": "Hackathon Citizens of Wallonia",
-      "location": "Charleroi, Région wallonne, Belgique",
-      "position": "Full Stack Developer Web Intern",
-      "url": "https://www.cow.be",
-      "startDate": "2023-03-29",
-      "endDate": "2023-03-31",
-      "summary": "OnlyTogether: solution allowing the vulnerable users always being accompagned",
-      "highlights": []
+      "summary": "This qualifying training aimed to strengthen the technical skills acquired during my bachelor's degree program at EPHEC.\nIn addition, during the extension, we received an introduction to Business Intelligence and ETL processes (Data Warehousing) using Microsoft tools (SSIS, ...).\nThis comprehensive training covered various areas including SQL Server, Node.js, Express.js, React, and Angular, encompassing everything from database development to user interface and backend."
     },
     {
       "company": "EDITx: IT Challenges, IT Jobs, Education in IT for X",
-      "location": "Région de Bruxelles-Capitale, Belgique",
       "position": "Full Stack Developer Web Intern",
       "url": "https://www.linkedin.com/company/editx/",
+      "location": "Région de Bruxelles-Capitale, Belgique",
       "startDate": "2022-04-01",
-      "endDate": "2022-04-30",
-      "summary": "",
-      "highlights": []
+      "endDate": "2022-04-30"
     },
     {
       "company": "Les Auberges de Jeunesse - Wallonie & Bruxelles",
-      "location": "Région de Bruxelles-Capitale, Belgique",
       "position": "Student Job",
       "url": "https://www.laj.be",
+      "location": "Région de Bruxelles-Capitale, Belgique",
       "startDate": "2022-03-30",
-      "endDate": "2022-03-31",
-      "summary": "",
-      "highlights": []
+      "endDate": "2022-03-31"
     },
     {
       "company": "RESTOMAX",
-      "location": "Région de Bruxelles-Capitale, Belgique",
       "position": "Full Stack Developer Web Intern",
       "url": "https://www.restomax.be",
+      "location": "Région de Bruxelles-Capitale, Belgique",
       "startDate": "2021-11-01",
-      "endDate": "2022-03-31",
-      "summary": "",
-      "highlights": []
+      "endDate": "2022-03-31"
     },
     {
       "company": "Quick Restaurant",
-      "location": "Kraainem, Flemish Region, Belgium",
       "position": "Student Job",
       "url": "https://www.quick.be",
+      "location": "Kraainem, Flemish Region, Belgium",
       "startDate": "2017-09-01",
-      "endDate": "2017-09-30",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "UMons",
-      "position": "Student Representative",
-      "url": "https://www.umons.be",
-      "startDate": "2023-11-30",
-      "endDate": "",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "organization": "UMons",
-      "position": "Buddy Tandemons",
-      "url": "https://www.umons.be",
-      "startDate": "2023-11-30",
-      "endDate": "",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "organization": "EPHEC École Supérieure de Promotion Sociale",
-      "position": "Student Representative",
-      "url": "https://www.ephec.be",
-      "startDate": "2019-09-30",
-      "endDate": "2022-10-15",
-      "summary": "",
-      "highlights": []
-    },
-    {
-      "organization": "EPHEC École Supérieure de Promotion Sociale",
-      "position": "Tutor",
-      "url": "https://www.ephec.be",
-      "startDate": "2019-09-30",
-      "endDate": "2022-10-15",
-      "summary": "",
-      "highlights": []
-    }
-  ],
-  "projects": [
-    {
-      "name": "EduCraft",
-      "startDate": "2024-03-29",
-      "endDate": "2024-03-31",
-      "summary": "Education Manager"
-    },
-    {
-      "name": "MyWay",
-      "description": "Education manager for students.",
-      "highlights": [
-        "UI/UX.",
-        "APIs integration."
-      ],
-      "keywords": ["JavaScript", "API", "UI/UX"],
-      "startDate": "2023-02-01",
-      "summary": "Education manager for students.",
-      "url": "https://my-way-bg.vercel.app",
-      "roles": ["Founder"],
-      "entity": "Freelance",
-      "type": "Web Application"
-    },
-    {
-      "name": "VhAuctions NER Inventory Model",
-      "startDate": "2024-03-01",
-      "endDate": "2024-08-07",
-      "summary": "Named Entity Recognition Machine Learning Model to extract Inventory Items from and audio transcription."
-    },
-    {
-      "name": "VhAuctions",
-      "startDate": "2024-01-01",
-      "endDate": "2024-02-28",
-      "summary": "Fleet manager for auctions."
-    },
-    {
-      "name": "Kwalitijd",
-      "startDate": "2023-09-01",
-      "endDate": "2023-12-31",
-      "summary": "Survey manager for sports clubs and federations."
-    },
-    {
-      "name": "WebMenu",
-      "startDate": "2021-11-01",
-      "endDate": "2022-03-31",
-      "summary": "QRCode based cash register for HoReCa establishments."
+      "endDate": "2017-09-30"
     }
   ],
   "education": [
     {
       "institution": "UMons",
-      "area": "Computer Science",
-      "studyType": "Master of Science - MS",
+      "studyType": "Master of Science - MSc",
+      "area": "Computer Science (work-study program) — specialised professional focus (120 ECTS)",
       "startDate": "2022-10-15",
-      "gpa": "",
-      "courses": []
+      "endDate": "2026-09-04",
+      "courses": [
+        "Algorithmique",
+        "Anglais I",
+        "Bases de données I",
+        "Lecture et rédaction scientifique",
+        "Mathématique",
+        "Modélisation logicielle",
+        "Réseaux",
+        "Stratégie et politiques en ressources humaines",
+        "Systèmes d'exploitation",
+        "Anglais II",
+        "Bases de données II",
+        "Ingénierie de logiciels et gestion de projets",
+        "Intelligence artificielle",
+        "Recherche opérationnelle et applications",
+        "Structures de données",
+        "Séminaires d'informatique en veille technologique",
+        "Cryptographie et sécurité des systèmes informatiques",
+        "Éthique et droit de l'informatique"
+      ]
     },
     {
       "institution": "Ecole Pratique Hautes Etudes Commerciales (EPHEC-EPS)",
-      "area": "Information Systems Management",
       "studyType": "Professional Bachelor's degree",
+      "area": "Information Systems Management",
       "startDate": "2018-09-30",
       "endDate": "2022-10-15",
-      "gpa": "Satisfaction ",
-      "summary": "WebMenu",
-      "courses": []
+      "courses": [
+        "Structure des ordinateurs",
+        "Informatique - Système d'exploitation",
+        "Mathématique appliquée à l'informatique",
+        "Principes algorithmiques et programmation",
+        "Principes d'analyse informatique",
+        "Information et communication professionnelles",
+        "Web : principes de base",
+        "Initiation aux bases de données",
+        "Gestion et exploitation de bases de données",
+        "Programmation orientée objet",
+        "Projet d'analyse et de conception",
+        "Techniques de gestion de projet",
+        "Éléments de statistique",
+        "Projet de développement web",
+        "Notions de e-business",
+        "Projet de développement SGBD",
+        "Bases des réseaux",
+        "Organisation des entreprises et éléments de management",
+        "Produits logiciels de gestion intégrés",
+        "Projet d'intégration de développement",
+        "Veille technologique",
+        "Administration, gestion et sécurisation des réseaux",
+        "Langue en situation appliquée à l'enseignement supérieur UE1",
+        "Langue en situation appliquée à l'enseignement supérieur UE2"
+      ]
     },
     {
       "institution": "Institut Saint-Louis Bruxelles",
-      "area": "7e Spéciale Mathématiques",
       "studyType": "Attestation",
+      "area": "7e Spéciale Mathématiques",
       "startDate": "2019-09-30",
-      "endDate": "2020-06-30",
-      "gpa": "Attestation",
-      "courses": []
+      "endDate": "2020-06-30"
     },
     {
       "institution": "Université Saint-Louis - Bruxelles",
-      "area": "Political sciences",
-      "studyType": "Bachelor of Arts - BA",
+      "studyType": "Bachelor in Political Sciences",
+      "area": "General orientation",
       "startDate": "2016-09-30",
       "endDate": "2019-06-30",
-      "gpa": "29 credits earned in 2016-2017, contact me for more informations.",
-      "courses": []
+      "courses": [
+        "Économie I",
+        "Économie II",
+        "Science politique",
+        "Séminaire : penser le social",
+        "Séminaire : principes et méthodes en sciences sociales",
+        "Socio-économie des médias",
+        "Anglais I (Saint-Louis)",
+        "Néerlandais I"
+      ]
     },
     {
       "institution": "Solvay Brussels School of Economics and Management",
-      "area": "Business Engineering",
       "studyType": "Bachelor of Science - BSc",
+      "area": "Business Engineering",
       "startDate": "2015-09-30",
-      "endDate": "2016-06-30",
-      "gpa": "Contact me for more informations.",
-      "courses": []
+      "endDate": "2016-06-30"
     },
     {
       "institution": "Université libre de Bruxelles",
-      "area": "Business Engineering",
       "studyType": "Bachelor of Science - BSc",
+      "area": "Business Engineering",
       "startDate": "2015-09-30",
-      "endDate": "2016-06-30",
-      "gpa": "Contact me for more informations.",
-      "courses": []
+      "endDate": "2016-06-30"
     },
     {
       "institution": "UCLouvain - Université catholique de Louvain",
-      "area": "Médecine et dentisterie",
       "studyType": "Cours préparatoires",
+      "area": "Médecine et dentisterie",
       "startDate": "2014-09-30",
-      "endDate": "2015-06-30",
-      "gpa": "Attestation ",
-      "courses": []
+      "endDate": "2015-06-30"
     },
     {
       "institution": "Centre Scolaire Saint-Adrien - Val Duchesse",
-      "area": "General Studies Maths & Modern languages",
       "studyType": "C.E.S.S.",
+      "area": "General Studies Maths & Modern languages",
       "startDate": "2012-09-30",
-      "endDate": "2015-06-30",
-      "gpa": "Satis bene",
-      "courses": []
+      "endDate": "2015-06-30"
     },
     {
       "institution": "Lycée Mater Dei",
-      "area": "General studies Latin & Greec",
-      "studyType": "",
+      "area": "General studies Latin & Greek",
       "startDate": "2009-09-30",
-      "endDate": "2012-06-30",
-      "gpa": "",
-      "courses": []
+      "endDate": "2012-06-30"
     }
   ],
-  "awards": [
+  "projects": [
     {
-      "title": "TOEIC",
-      "date": "2023-06-06",
-      "awarder": "ETS",
-      "summary": "730"
+      "name": "Baba",
+      "description": "Shell-like CLI queried in controlled English through pure symbolic AI — no LLM in the loop.",
+      "keywords": [
+        "Rust",
+        "Prolog",
+        "LinkGrammar",
+        "SymbolicAI",
+        "NLP",
+        "DDD",
+        "TDD",
+        "MutationTesting"
+      ],
+      "startDate": "2026-07-02",
+      "type": "CLI",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "KAG",
+      "description": "Purely algorithmic Rust framework that benchmarks interchangeable RAG pipeline components on BEIR and ships the best measured configuration as a question-answering CLI with cited sources.",
+      "keywords": [
+        "Rust",
+        "RAG",
+        "InformationRetrieval",
+        "LearningToRank",
+        "BEIR",
+        "DDD",
+        "HexagonalArchitecture",
+        "TDD"
+      ],
+      "startDate": "2026-07-05",
+      "type": "Framework",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "LL",
+      "description": "Spaced-repetition vocabulary trainer for six languages, each word taught with an aligned example sentence in every language.",
+      "keywords": [
+        "Rust",
+        "Dioxus",
+        "Ratatui",
+        "SQLite",
+        "iOS",
+        "SpacedRepetition",
+        "Leitner",
+        "SM2",
+        "Python",
+        "spaCy",
+        "NLP",
+        "WordNet",
+        "Tatoeba",
+        "HexagonalArchitecture",
+        "DDD",
+        "TDD"
+      ],
+      "startDate": "2026-07-03",
+      "type": "Application",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Indexer",
+      "description": "Curated index of external data sources, books and software packages, served as a public read API.",
+      "keywords": [
+        "Rust",
+        "CloudflareWorkers",
+        "WebAssembly",
+        "DurableObjects",
+        "TOML",
+        "BM25F",
+        "InformationRetrieval",
+        "TDD"
+      ],
+      "startDate": "2026-10-06",
+      "type": "API",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Polytech",
+      "description": "Engineering-studies library that computes every number and expression of LaTeX worked solutions, none typed by hand.",
+      "keywords": [
+        "Python",
+        "SymPy",
+        "NumPy",
+        "SciPy",
+        "LaTeX",
+        "Lean4",
+        "Mathlib",
+        "DDD",
+        "HexagonalArchitecture",
+        "TDD",
+        "MutationTesting"
+      ],
+      "startDate": "2026-09-23",
+      "type": "Library",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Converge",
+      "description": "AI-assisted 3D mechanical design platform that orchestrates open-source geometry, meshing and simulation engines.",
+      "keywords": [
+        "Rust",
+        "Python",
+        "OpenCASCADE",
+        "Manifold",
+        "build123d",
+        "Gmsh",
+        "Optuna",
+        "NSGA2",
+        "MultiObjectiveOptimization",
+        "Pareto",
+        "ThreeJS",
+        "HexagonalArchitecture",
+        "TDD"
+      ],
+      "startDate": "2026-10-20",
+      "type": "Platform",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Actrack",
+      "description": "Multi-sport database and predictive modeling platform evaluating match outcomes across leagues and tournaments through ensemble rating strategies.",
+      "keywords": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "DuckDB",
+        "Rust",
+        "Dioxus",
+        "WebAssembly",
+        "EloRating",
+        "PoissonModel",
+        "EnsembleModel",
+        "WalkForwardBacktest",
+        "BrierScore",
+        "HexagonalArchitecture",
+        "DDD",
+        "TDD"
+      ],
+      "startDate": "2026-06-28",
+      "url": "https://github.com/grosjeanbaptiste/actrack",
+      "type": "Forecasting engine",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Actif",
+      "description": "Desktop application and analytical engine for global financial markets (stocks, ETFs, bonds, FX, crypto, indices) with vectorized analytical storage and hexagonal architecture in TDD.",
+      "keywords": [
+        "Rust",
+        "Dioxus",
+        "DuckDB",
+        "SQLite",
+        "Parquet",
+        "DDD",
+        "TDD",
+        "HexagonalArchitecture"
+      ],
+      "startDate": "2026-10-30",
+      "url": "https://github.com/grosjeanbaptiste/Actif",
+      "type": "Desktop application",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Actmorph",
+      "description": "Universal cataloging engine and format-agnostic file metadata extraction system.",
+      "keywords": [
+        "Rust",
+        "FileEngine",
+        "Metadata",
+        "TDD"
+      ],
+      "startDate": "2026-11-05",
+      "url": "https://github.com/grosjeanbaptiste/Actmorph",
+      "type": "Engine",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Servai",
+      "description": "Universal orchestrator for full server and cloud administration (DNS zones, TLS Let's Encrypt certificates, WireGuard VPNs, OpenTofu, Ansible) with a reactive REST API powering Biorcrux UI.",
+      "keywords": [
+        "Rust",
+        "Axum",
+        "OpenTofu",
+        "Ansible",
+        "WireGuard",
+        "TLS",
+        "DNS",
+        "HexagonalArchitecture",
+        "TDD"
+      ],
+      "startDate": "2026-11-01",
+      "url": "https://github.com/grosjeanbaptiste/servai",
+      "type": "Orchestrator",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "ss",
+      "description": "Modular system supervisor and diagnostic suite (processes, memory, storage volumes, network telemetry, power) driving CLI and Dioxus desktop interfaces.",
+      "keywords": [
+        "Rust",
+        "Dioxus",
+        "SystemsProgramming",
+        "Telemetry",
+        "CLI",
+        "TDD"
+      ],
+      "startDate": "2026-11-02",
+      "url": "https://github.com/grosjeanbaptiste/ss",
+      "type": "Supervisor",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Biorcrux",
+      "description": "Modular library providing declarative UI components, persistence, charting, and internationalization for multiplatform desktop applications.",
+      "keywords": [
+        "Rust",
+        "Dioxus",
+        "UI",
+        "Desktop",
+        "i18n",
+        "Charting",
+        "TDD"
+      ],
+      "startDate": "2026-11-12",
+      "url": "https://github.com/grosjeanbaptiste/biorcrux",
+      "type": "Library",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Repo",
+      "description": "CLI tooling suite for semantic naming, collision detection, and declarative scaffolding of Git / GitHub repositories.",
+      "keywords": [
+        "Rust",
+        "CLI",
+        "Git",
+        "GitHub",
+        "Scaffolding",
+        "TDD"
+      ],
+      "startDate": "2026-11-11",
+      "url": "https://github.com/grosjeanbaptiste/repo",
+      "type": "CLI",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Actsessions",
+      "description": "Local discovery, session inventory, and telemetry for AI coding agents.",
+      "keywords": [
+        "Rust",
+        "Agents",
+        "Observability",
+        "Telemetry",
+        "TDD"
+      ],
+      "startDate": "2026-11-10",
+      "url": "https://github.com/grosjeanbaptiste/actsessions",
+      "type": "CLI",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "usext",
+      "description": "Real-time quota tracking and usage forecasting for AI coding assistants.",
+      "keywords": [
+        "Rust",
+        "CLI",
+        "Forecasting",
+        "Observability",
+        "TDD"
+      ],
+      "startDate": "2026-11-11",
+      "url": "https://github.com/grosjeanbaptiste/usext",
+      "type": "CLI",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Polymath",
+      "description": "Universal graph of computation packages interconnecting scientific disciplines without redundancy via the Rust type system.",
+      "keywords": [
+        "Rust",
+        "DAG",
+        "ScientificComputing",
+        "Mathematics",
+        "TypeSystem",
+        "TDD"
+      ],
+      "startDate": "2026-11-14",
+      "url": "https://github.com/grosjeanbaptiste/polymath",
+      "type": "Library",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Corpus",
+      "description": "Aggregated repository of university course materials, lecture notes, and assignments sourced across Moodle platforms and academic portals, with exact worked solutions.",
+      "keywords": [
+        "Python",
+        "LaTeX",
+        "KnowledgeBase",
+        "Education",
+        "Solver",
+        "TDD"
+      ],
+      "startDate": "2026-11-11",
+      "url": "https://github.com/grosjeanbaptiste/corpus",
+      "type": "Knowledge base",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Actedu",
+      "description": "Global graph-based mapping and visualization of higher-education academic paths, prerequisite dependencies, course trajectories, and degree pathways.",
+      "keywords": [
+        "Rust",
+        "KnowledgeGraph",
+        "GraphTheory",
+        "Education",
+        "Visualization",
+        "TDD"
+      ],
+      "startDate": "2026-11-15",
+      "url": "https://github.com/grosjeanbaptiste/actedu",
+      "type": "Knowledge graph",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Synergy",
+      "description": "Internal platform for the Belgian Federal Parliament to search, explore and converse with the parliamentary archives.",
+      "keywords": [
+        "Python",
+        "Java",
+        ".NET",
+        "RAG",
+        "AI"
+      ],
+      "startDate": "2025-11-03",
+      "endDate": "2026-06-30",
+      "type": "Platform",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "fedrag-be",
+      "description": "Open evaluation protocol comparing retrieval strategies on the Belgian Senate corpus, with a focus on bilingual FR/NL robustness.",
+      "keywords": [
+        "RAG",
+        "Python",
+        "Evaluation",
+        "Benchmark",
+        "OCR",
+        "SentenceTransformers",
+        "Pandas"
+      ],
+      "startDate": "2025-11-03",
+      "endDate": "2026-06-30",
+      "type": "Research",
+      "roles": [
+        "Author"
+      ]
+    },
+    {
+      "name": "Acteble",
+      "description": "Geolocated social platform that brings people together around shared activities: a Rust backend, an offline-first Flutter app and a React website.",
+      "keywords": [
+        "Rust",
+        "Tokio",
+        "Axum",
+        "Tonic",
+        "gRPC",
+        "Protobuf",
+        "SQLx",
+        "PostgreSQL",
+        "PostGIS",
+        "Redis",
+        "MinIO",
+        "LiveKit",
+        "OpenBao",
+        "Prometheus",
+        "Testcontainers",
+        "OpenStreetMap",
+        "Docker",
+        "Caddy",
+        "Dylint",
+        "DDD",
+        "HexagonalArchitecture",
+        "CQRS",
+        "EventDriven",
+        "Flutter",
+        "Dart",
+        "Melos",
+        "Riverpod",
+        "Drift",
+        "SQLite",
+        "SQLCipher",
+        "Dio",
+        "FlutterRustBridge",
+        "MapLibre",
+        "FlutterMap",
+        "Firebase",
+        "OfflineFirst",
+        "E2EE",
+        "Mobile",
+        "React",
+        "Vite",
+        "JavaScript",
+        "i18next",
+        "ReactRouter",
+        "ESLint",
+        "Vercel"
+      ],
+      "startDate": "2025-04-12",
+      "url": "https://www.acteble.com",
+      "type": "Platform",
+      "roles": [
+        "Founder"
+      ]
+    },
+    {
+      "name": "Mémoire de master",
+      "description": "MSc dissertation at UMONS — the R&D of Acteble's planning engine.",
+      "keywords": [
+        "Python",
+        "Rust",
+        "LaTeX",
+        "MiniZinc",
+        "ORTools",
+        "ConstraintProgramming",
+        "CombinatorialOptimization",
+        "MultiObjectiveOptimization",
+        "Pareto",
+        "DSL",
+        "MutationTesting"
+      ],
+      "startDate": "2025-11-13",
+      "endDate": "2026-09-04",
+      "type": "Dissertation",
+      "roles": [
+        "Author"
+      ],
+      "entity": "UMONS"
+    },
+    {
+      "name": "Emvi App",
+      "description": "AI powered visual assistant for visually impaired people.",
+      "keywords": [
+        "Flutter",
+        "Firebase",
+        "OpenAI",
+        "Valhalla",
+        "AI",
+        "Dart"
+      ],
+      "startDate": "2024-12-01",
+      "endDate": "2025-06-30",
+      "url": "https://www.emvi.ai",
+      "type": "Mobile Application"
+    },
+    {
+      "name": "Remi",
+      "description": "Reminiscence application for people with cognitive issues.",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "OpenAI",
+        "Whisper",
+        "DeepFace",
+        "PostgreSQL",
+        "SQLAlchemy"
+      ],
+      "startDate": "2024-10-01",
+      "endDate": "2025-06-30",
+      "type": "AI Application"
+    },
+    {
+      "name": "EduCraft",
+      "description": "Platform allowing users to get more skills.",
+      "keywords": [
+        "PHP",
+        "API",
+        "UI/UX"
+      ],
+      "startDate": "2024-03-29",
+      "endDate": "2024-03-31"
+    },
+    {
+      "name": "MyWay",
+      "description": "Education manager for students. No longer maintained; database and auth are unavailable.",
+      "keywords": [
+        "Angular",
+        "JavaScript",
+        "TypeScript",
+        "Express.js",
+        "API",
+        "UI/UX",
+        "SQL Server",
+        "Auth0",
+        "PayPal",
+        "Sequelize",
+        "Node.js",
+        "React"
+      ],
+      "startDate": "2023-01-01",
+      "endDate": "2023-06-30",
+      "url": "https://my-way-bg.vercel.app",
+      "type": "Web Application",
+      "roles": [
+        "Founder"
+      ],
+      "entity": "Freelance"
+    },
+    {
+      "name": "VhAuctions NER Inventory Model",
+      "keywords": [
+        "Python",
+        "SpaCy",
+        "Pandas",
+        "NumPy",
+        ".NET",
+        "NER"
+      ],
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-07"
+    },
+    {
+      "name": "VhAuctions",
+      "keywords": [
+        ".NET",
+        "C#",
+        "EntityFramework",
+        "React",
+        "TypeScript",
+        "Docker",
+        "Azure",
+        "OpenTelemetry",
+        "SQL Server"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-02-28"
+    },
+    {
+      "name": "Kwalitijd",
+      "keywords": [
+        ".NET",
+        "C#",
+        "Blazor",
+        "EntityFramework",
+        "xUnit",
+        "SQL Server",
+        "DDD"
+      ],
+      "startDate": "2023-09-01",
+      "endDate": "2023-12-31"
+    },
+    {
+      "name": "WebMenu",
+      "keywords": [
+        ".NET",
+        "Flutter",
+        "SQL Server",
+        "QRCode"
+      ],
+      "startDate": "2021-11-01",
+      "endDate": "2022-03-31"
+    }
+  ],
+  "references": [
+    {
+      "name": "Waseem Virk, Flutter Dev Emvi.ai",
+      "reference": "Working alongside Baptiste Grosjean on the EMVI project has been an incredibly rewarding experience—both professionally and personally. Not only is Baptiste a highly skilled developer with a sharp eye for design and functionality, but he’s also been a mentor and an inspiration throughout our collaboration.\n\nI’ve learned so much from him—from best practices in Flutter development to the importance of thoughtful UI/UX and clean architecture. He’s always willing to share his knowledge, explain complex ideas with clarity, and support the team in any way he can.\n\nWhat stands out the most is Baptiste’s ability to turn challenges into opportunities. His calm, focused approach and problem-solving mindset helped us overcome technical hurdles and build features that truly improve user experience. On top of that, his collaborative nature made working as a team feel seamless and motivating.\n\nIf you're looking for someone who not only delivers exceptional results but also uplifts everyone around him, I can't recommend Baptiste enough. He’s a fantastic developer, a great teammate, and someone I’ve been lucky to learn from."
+    },
+    {
+      "name": "Tino Schuerewegen, Software developer at Xtrada",
+      "reference": "I had the pleasure of working with Baptiste for a year, with the added joy of mentoring him on a project for three months. If there's one thing that stands out about Baptiste, it's his boundless energy. Whether it's 9 AM or 9 PM, he's always the most enthusiastic person in the room—sometimes even more enthusiastic than the coffee machine.\n\nBaptiste brings a contagious energy to any project he's part of. He’s outgoing, smart, and has an eagerness to learn that is truly admirable. Whether he's diving into a complex task or asking insightful questions, he's always in search of knowledge. His enthusiasm for learning, especially when it comes to leveraging tools like ChatGPT, is both impressive and a little intimidating. Seriously, if ChatGPT had a best friend, it would be Baptiste!\n\nHe’s also incredibly hands-on, never shying away from rolling up his sleeves and getting deep into the work. His approach isn't just theoretical; he's all about practical, tangible results.\n\nIn summary, if you're looking for someone who brings enthusiasm, intelligence, and a touch of humor to every task, Baptiste is your person. Working with him was not just productive, but genuinely enjoyable."
+    },
+    {
+      "name": "Emiel Van Gysegem, Marketing and operations at Xtra Groep",
+      "reference": "Hoewel we niet direct samenwerkten, had ik altijd een heel fijne connectie met Baptiste. In een mengelmoes van Engels, Nederlands en Frans deelden we vaak leuke gesprekken. Zijn enthousiasme en energie zijn echt aanstekelijk, en hij weet een prettige, informele sfeer te creëren in elke interactie. Baptiste is iemand die een positieve dynamiek met zich meebrengt."
+    },
+    {
+      "name": "Steven Claus, CFO at Xtra Groep",
+      "reference": "Baptiste is a full-stack software developer and is driven by an unwavering determination. This mindset permeates every aspect of his career. He has worked in various fields, allowing him to quickly adapt to any situation. These roles have honed both his technical and interpersonal skills, making him a versatile collaborator who significantly impacts every project he joins. Fueled by a constant desire to learn, he continually updates his knowledge through a master’s degree in computer science. This ongoing learning journey makes him a well-rounded IT professional in the field of computer science."
+    },
+    {
+      "name": "Tjörven Janssens, software developer at Xtrada",
+      "reference": "Baptiste is naast een software ontwikkelaar, graag bezig met data-analyse en is een expert in het gebruik van ChatGPT. Hij leert graag nieuwe dingen en doet dit ook snel. Hij is erg enthousiast in omgang en staat steeds klaar voor een vriendelijk woord of wat advies."
+    },
+    {
+      "name": "Michael Culot, Sales manager at Xtrada",
+      "reference": "Baptiste is a great and devoted developer who’s eager to keep learning new technologies and elevate his skill set. You would be amazed about not only his knowledge but also his warm open enthusiasm. Baptiste, you’re going to be doing great things in your life, just keep your vibrant spirit ✊"
     }
   ],
   "skills": [
     {
       "name": "HardSkills",
-      "level": "Intermediate",
       "keywords": [
         "SQL",
         "C#",
@@ -351,6 +919,7 @@
         "CSS",
         "Zsh",
         "Dart",
+        "Rust",
         "LaTeX",
         "SQL Server",
         "EF",
@@ -358,13 +927,35 @@
         "Pandas",
         "NumPy",
         "Whisper",
-        "Spacy",
+        "SpaCy",
+        "PyTorch",
+        "Transformers",
+        "HuggingFace",
+        "SentenceTransformers",
+        "LLMs",
+        "RAG",
+        "LangChain",
+        "OpenAI",
+        "Claude",
+        "Embeddings",
+        "ColBERT",
+        "Reranking",
+        "FAISS",
+        "OpenSearch",
+        "RAGAS",
+        "PromptEngineering",
+        "OCR",
+        "Docling",
+        "VLM",
         "Node.js",
         "Express.js",
         "Blazor",
-        "Angular.js",
-        "React.js",
+        "Angular",
+        "React",
         "Flutter",
+        "Tokio",
+        "Axum",
+        "Tower",
         "Gradle",
         "NPM",
         "JWT",
@@ -376,21 +967,17 @@
         "UML",
         "Merise",
         "VisualParadigm",
+        "MiniZinc",
+        "ConstraintProgramming",
+        "CombinatorialOptimization",
+        "Pareto",
+        "Lark",
+        "DSL",
+        "Hypothesis",
         "CleanCode",
         "CleanArchitecture",
         "DDD",
         "CQRS"
-      ]
-    },
-    {
-      "name": "Learning",
-      "keywords": [
-        "TDD",
-        "TensorFlow",
-        "Scikit-Learn",
-        "C",
-        "XQuery",
-        "Blockchain"
       ]
     },
     {
@@ -409,6 +996,17 @@
         "Resourcefulness",
         "Thoroughness"
       ]
+    },
+    {
+      "name": "Learning",
+      "keywords": [
+        "TDD",
+        "TensorFlow",
+        "Scikit-Learn",
+        "C",
+        "XQuery",
+        "Blockchain"
+      ]
     }
   ],
   "languages": [
@@ -425,6 +1023,14 @@
       "fluency": "B1"
     }
   ],
+  "awards": [
+    {
+      "title": "TOEIC",
+      "date": "2023-06-06",
+      "awarder": "ETS",
+      "summary": "730"
+    }
+  ],
   "interests": [
     {
       "name": "Research and Development",
@@ -435,26 +1041,34 @@
       ]
     }
   ],
-  "references": [
+  "volunteer": [
     {
-      "name": "Tino Schuerewegen, Software developer at Xtrada",
-      "reference": "I had the pleasure of working with Baptiste for a year, with the added joy of mentoring him on a project for three months. If there's one thing that stands out about Baptiste, it's his boundless energy. Whether it's 9 AM or 9 PM, he's always the most enthusiastic person in the room—sometimes even more enthusiastic than the coffee machine.\n\nBaptiste brings a contagious energy to any project he's part of. He’s outgoing, smart, and has an eagerness to learn that is truly admirable. Whether he's diving into a complex task or asking insightful questions, he's always in search of knowledge. His enthusiasm for learning, especially when it comes to leveraging tools like ChatGPT, is both impressive and a little intimidating. Seriously, if ChatGPT had a best friend, it would be Baptiste!\n\nHe’s also incredibly hands-on, never shying away from rolling up his sleeves and getting deep into the work. His approach isn't just theoretical; he's all about practical, tangible results.\n\nIn summary, if you're looking for someone who brings enthusiasm, intelligence, and a touch of humor to every task, Baptiste is your person. Working with him was not just productive, but genuinely enjoyable."
+      "organization": "UMons",
+      "position": "Student Representative",
+      "url": "https://www.umons.be",
+      "startDate": "2023-11-30",
+      "endDate": "2026-09-04"
     },
     {
-      "name": "Emiel Van Gysegem, Marketing and operations at Xtra Groep",
-      "reference": "Hoewel we niet direct samenwerkten, had ik altijd een heel fijne connectie met Baptiste. In een mengelmoes van Engels, Nederlands en Frans deelden we vaak leuke gesprekken. Zijn enthousiasme en energie zijn echt aanstekelijk, en hij weet een prettige, informele sfeer te creëren in elke interactie. Baptiste is iemand die een positieve dynamiek met zich meebrengt."
+      "organization": "UMons",
+      "position": "Buddy TandeMons",
+      "url": "https://www.umons.be",
+      "startDate": "2023-11-30",
+      "endDate": "2026-09-04"
     },
     {
-      "name": "Steven Claus, CFO at Xtra Groep",
-      "reference": "Baptiste is a full-stack software developer and is driven by an unwavering determination. This mindset permeates every aspect of his career. He has worked in various fields, allowing him to quickly adapt to any situation. These roles have honed both his technical and interpersonal skills, making him a versatile collaborator who significantly impacts every project he joins. Fueled by a constant desire to learn, he continually updates his knowledge through a master’s degree in computer science. This ongoing learning journey makes him a well-rounded IT professional in the field of computer science."
+      "organization": "EPHEC École Supérieure de Promotion Sociale",
+      "position": "Student Representative",
+      "url": "https://www.ephec.be",
+      "startDate": "2019-09-30",
+      "endDate": "2022-10-15"
     },
     {
-      "name": "Tjörven Janssens, software developer at Xtrada",
-      "reference": "Baptiste is naast een software ontwikkelaar, graag bezig met data-analyse en is een expert in het gebruik van chat-gtp. Hij leert graag nieuwe dingen en doet dit ook snel. Hij is erg enthousiast in omgang en staat steeds klaar voor een vriendelijk woord of wat advies."
-    },
-    {
-      "name": "Michael Culot, Sales manager at Xtrada",
-      "reference": "Baptiste is a great and devoted developer who’s eager to keep learning new technologies and elevate his skill set. You would be amazed about not only his knowledge but also his warm open enthusiasm. Baptiste, you’re going to be doing great things in your life, just keep your vibrate spirit ✊"
+      "organization": "EPHEC École Supérieure de Promotion Sociale",
+      "position": "Tutor",
+      "url": "https://www.ephec.be",
+      "startDate": "2019-09-30",
+      "endDate": "2022-10-15"
     }
   ]
 }
