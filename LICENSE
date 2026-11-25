@@ -1,21 +1,48 @@
-Copyright (c) 2026 Baptiste Grosjean. All rights reserved.
+PROPRIETARY LICENSE: ALL RIGHTS RESERVED. NO RIGHT OF USE, COPY OR ANALYSIS.
 
-This repository is proprietary. It is public so that it can be read; being able
-to read it grants no licence of any kind.
+Copyright (c) 2024-2026 Baptiste Grosjean. All rights reserved.
 
-No part of it — source code, scripts, stylesheets, templates, generated files,
-the CV and its data, texts, design and images — may be used, copied, modified,
-merged, published, distributed, sublicensed, sold, or used to train or evaluate
-machine-learning models, in whole or in part, without the prior written
-permission of the copyright holder.
+This source code, and every file, document, configuration, script, data set,
+model, design and derivative work that accompanies it (the "Software"), is the
+proprietary and confidential property of Baptiste Grosjean (the "Owner").
 
-The only exception is what GitHub's Terms of Service let other GitHub users do
-with a public repository on GitHub itself (view it and fork it there); that
-grants no right to use any of it elsewhere.
+1. NO LICENCE IS GRANTED. No right, express or implied, by estoppel or
+   otherwise, is granted to any person. Being able to read, receive, clone or
+   download the Software, on a private or public repository or elsewhere,
+   grants no right at all.
 
-Third-party material keeps its own licence and is not covered by this notice:
-dependencies remain under the licences of their authors. Versions 1.0.0 and
-1.1.0 of this theme were published on npm under the ISC licence and keep it;
-every later version is covered by this notice.
+2. COPYING IS FORBIDDEN. You may not copy, reproduce, duplicate, mirror,
+   fork, clone for any purpose other than the Owner's own, transcribe,
+   translate, adapt, port, excerpt, summarise or otherwise reuse the Software
+   or any part of it, in any form or on any medium, including by hand, by
+   screenshot or by automated means.
 
-Contact: grosjeanbaptiste@outlook.com
+3. ANALYSIS IS FORBIDDEN. You may not analyse, inspect, study, audit, profile,
+   benchmark, test, scan, index, crawl, scrape, mine, measure, decompile,
+   disassemble, reverse engineer or otherwise examine the Software, its
+   behaviour, its structure, its interfaces or its output, whether manually
+   or with any tool, program, service or artificial-intelligence system, in
+   order to derive its source code, algorithms, design, data or know-how.
+
+4. NO USE FOR MACHINE LEARNING. You may not use the Software, or any
+   information derived from it, to train, fine-tune, evaluate, prompt,
+   ground, retrieve from or improve any machine-learning or artificial-
+   intelligence model, dataset, embedding, index or knowledge base.
+
+5. NO OTHER USE. You may not run, install, compile, modify, merge, publish,
+   distribute, disclose, sublicense, lend, rent, sell, host, offer as a
+   service or create derivative works of the Software.
+
+6. ANY EXCEPTION REQUIRES A PRIOR WRITTEN AGREEMENT signed by the Owner. No
+   exception may be inferred from conduct, silence, access or payment.
+
+7. The Owner and the persons the Owner expressly names in writing are the only
+   ones who may do what this licence forbids to others.
+
+8. Any breach ends every permission you may have received and entitles the
+   Owner to seek injunctive relief, damages and every other remedy available
+   at law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
